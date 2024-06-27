@@ -1,0 +1,26 @@
+name: Pull Request Auto Merge
+ 
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+        
+    if: github.actor != 'dependabot[bot]'
+
+    steps:
+    - name: Pull request auto merge enabler
+      if: github.event_name == 'pull_request'
+      uses: poad/github-pull-request-auto-merge-enable-action@v2
+      with:
+        pull_request_number: ${{ github.event.pull_request.number }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: ${{ github.event.repository.name }}
+        owner: ${{ github.repository_owner }}
+        merge_method: SQUASH
