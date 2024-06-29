@@ -1,0 +1,34 @@
+{
+  "app": "pnpm lint && pnpm dlx node --loader ts-node/esm bin/cdk.ts",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.d.ts",
+      "**/*.js",
+      "tsconfig.json",
+      "package*.json",
+      "yarn.lock",
+      "node_modules",
+      "test"
+    ]
+  },
+  "requireApproval": "never",
+  "versionReporting": false,
+  "pathMetadata": false,
+  "context": {
+    "default": {
+      "stackName": "aws-hono-lambda",
+      "bucketName": "aws-hono-lambda",
+      "cloudfront": {
+        "comment": "Example Hono Lambda",
+        "originAccessControl": {
+          "name": "aws-hono-lambda-oac"
+        }
+      }
+    }
+  }
+}
