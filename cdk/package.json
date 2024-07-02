@@ -33,7 +33,7 @@
   "dependencies": {
     "aws-cdk-lib": "^2.147.2",
     "constructs": "^10.3.0",
-    "esbuild": "^0.22.0",
+    "esbuild": "^0.23.0",
     "hono": "^4.4.10",
     "source-map-support": "^0.5.21"
   }
