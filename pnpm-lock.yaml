@@ -22,7 +22,7 @@ importers:
         version: 0.8.8(@solidjs/router@0.14.1(solid-js@1.8.18))(solid-js@1.8.18)
       '@testing-library/jest-dom':
         specifier: ^6.4.6
-        version: 6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.0))
+        version: 6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.1))
       eslint:
         specifier: ^9.7.0
         version: 9.7.0
@@ -39,8 +39,8 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1(eslint@9.7.0)(typescript@5.5.3)
       jsdom:
-        specifier: ^24.1.0
-        version: 24.1.0
+        specifier: ^24.1.1
+        version: 24.1.1
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -61,10 +61,10 @@ importers:
         version: 0.32.3(@solidjs/router@0.14.1(solid-js@1.8.18))(vite@5.3.4(@types/node@20.14.11))
       vite-plugin-solid:
         specifier: ^2.10.2
-        version: 2.10.2(@testing-library/jest-dom@6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.0)))(solid-js@1.8.18)(vite@5.3.4(@types/node@20.14.11))
+        version: 2.10.2(@testing-library/jest-dom@6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.1)))(solid-js@1.8.18)(vite@5.3.4(@types/node@20.14.11))
       vitest:
         specifier: ^2.0.3
-        version: 2.0.3(@types/node@20.14.11)(jsdom@24.1.0)
+        version: 2.0.3(@types/node@20.14.11)(jsdom@24.1.1)
 
   cdk:
     dependencies:
@@ -78,8 +78,8 @@ importers:
         specifier: ^0.23.0
         version: 0.23.0
       hono:
-        specifier: ^4.5.0
-        version: 4.5.0
+        specifier: ^4.5.1
+        version: 4.5.1
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -128,7 +128,7 @@ importers:
         version: 4.3.2(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11))
       vitest:
         specifier: ^2.0.3
-        version: 2.0.3(@types/node@20.14.11)(jsdom@24.1.0)
+        version: 2.0.3(@types/node@20.14.11)(jsdom@24.1.1)
 
 packages:
 
@@ -1598,8 +1598,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.5.0:
-    resolution: {integrity: sha512-ZbezypZfn4odyApjCCv+Fw5OgweBqRLA/EsMyc4FUknFvBJcBIKhHy4sqmD1rWpBc/3wUlaQ6tqOPjk36R1ckg==}
+  hono@4.5.1:
+    resolution: {integrity: sha512-6q8AugoWG5wlrjdGG8OFFiqEsPlPGjODjUik48sEJeko4Tae1UsLS2vUiYHLEJx1gJvOZa4BWkQC+urwDmkEvQ==}
     engines: {node: '>=16.0.0'}
 
   html-encoding-sniffer@4.0.0:
@@ -1754,8 +1754,8 @@ packages:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
 
-  jsdom@24.1.0:
-    resolution: {integrity: sha512-6gpM7pRXCwIOKxX47cgOyvyQDN/Eh0f1MeKySBV2xGdKtqJBLj8P25eY3EVCWo2mglDDzozR2r2MW4T+JiNUZA==}
+  jsdom@24.1.1:
+    resolution: {integrity: sha512-5O1wWV99Jhq4DV7rCLIoZ/UIhyQeDR7wHVyZAHAshbrvZsLs+Xzz7gtwnlJTJDjleiTKh54F4dXrX70vJQTyJQ==}
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
@@ -3156,7 +3156,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.0))':
+  '@testing-library/jest-dom@6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.1))':
     dependencies:
       '@adobe/css-tools': 4.4.0
       '@babel/runtime': 7.24.8
@@ -3167,7 +3167,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
     optionalDependencies:
-      vitest: 2.0.3(@types/node@20.14.11)(jsdom@24.1.0)
+      vitest: 2.0.3(@types/node@20.14.11)(jsdom@24.1.1)
 
   '@tsconfig/node10@1.0.11': {}
 
@@ -4080,7 +4080,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.5.0: {}
+  hono@4.5.1: {}
 
   html-encoding-sniffer@4.0.0:
     dependencies:
@@ -4218,7 +4218,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jsdom@24.1.0:
+  jsdom@24.1.1:
     dependencies:
       cssstyle: 4.0.1
       data-urls: 5.0.0
@@ -4869,7 +4869,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-solid@2.10.2(@testing-library/jest-dom@6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.0)))(solid-js@1.8.18)(vite@5.3.4(@types/node@20.14.11)):
+  vite-plugin-solid@2.10.2(@testing-library/jest-dom@6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.1)))(solid-js@1.8.18)(vite@5.3.4(@types/node@20.14.11)):
     dependencies:
       '@babel/core': 7.24.9
       '@types/babel__core': 7.20.5
@@ -4880,7 +4880,7 @@ snapshots:
       vite: 5.3.4(@types/node@20.14.11)
       vitefu: 0.2.5(vite@5.3.4(@types/node@20.14.11))
     optionalDependencies:
-      '@testing-library/jest-dom': 6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.0))
+      '@testing-library/jest-dom': 6.4.6(vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -4908,7 +4908,7 @@ snapshots:
     optionalDependencies:
       vite: 5.3.4(@types/node@20.14.11)
 
-  vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.0):
+  vitest@2.0.3(@types/node@20.14.11)(jsdom@24.1.1):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@vitest/expect': 2.0.3
@@ -4931,7 +4931,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 20.14.11
-      jsdom: 24.1.0
+      jsdom: 24.1.1
     transitivePeerDependencies:
       - less
       - lightningcss
