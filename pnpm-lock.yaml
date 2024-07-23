@@ -21,8 +21,8 @@ importers:
         specifier: ^0.8.9
         version: 0.8.9(@solidjs/router@0.14.1(solid-js@1.8.18))(solid-js@1.8.18)
       '@testing-library/jest-dom':
-        specifier: ^6.4.7
-        version: 6.4.7(vitest@2.0.4(@types/node@20.14.11)(jsdom@24.1.1))
+        specifier: ^6.4.8
+        version: 6.4.8
       eslint:
         specifier: ^9.7.0
         version: 9.7.0
@@ -61,7 +61,7 @@ importers:
         version: 0.32.3(@solidjs/router@0.14.1(solid-js@1.8.18))(vite@5.3.4(@types/node@20.14.11))
       vite-plugin-solid:
         specifier: ^2.10.2
-        version: 2.10.2(@testing-library/jest-dom@6.4.7(vitest@2.0.4(@types/node@20.14.11)(jsdom@24.1.1)))(solid-js@1.8.18)(vite@5.3.4(@types/node@20.14.11))
+        version: 2.10.2(@testing-library/jest-dom@6.4.8)(solid-js@1.8.18)(vite@5.3.4(@types/node@20.14.11))
       vitest:
         specifier: ^2.0.4
         version: 2.0.4(@types/node@20.14.11)(jsdom@24.1.1)
@@ -832,26 +832,9 @@ packages:
     resolution: {integrity: sha512-pemlzrSESWbdAloYml3bAJMEfNh1Z7EduzqPKprCH5S341frlpYnUEW0H72dLxa6IsYr+mPno20GiSm+h9dEdQ==}
     engines: {node: '>=18'}
 
-  '@testing-library/jest-dom@6.4.7':
-    resolution: {integrity: sha512-GaKJ0nijoNf30dWSOOzQEBkWBRk4rG3C/efw8zKrimNuZpnS/6/AEwo0WvZHgJxG84cNCgxt+mtbe1fsvfLp2A==}
+  '@testing-library/jest-dom@6.4.8':
+    resolution: {integrity: sha512-JD0G+Zc38f5MBHA4NgxQMR5XtO5Jx9g86jqturNTt2WUfRmLDIY7iKkWHDCCTiDuFMre6nxAD5wHw9W5kI4rGw==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
-    peerDependencies:
-      '@jest/globals': '>= 28'
-      '@types/bun': latest
-      '@types/jest': '>= 28'
-      jest: '>= 28'
-      vitest: '>= 0.32'
-    peerDependenciesMeta:
-      '@jest/globals':
-        optional: true
-      '@types/bun':
-        optional: true
-      '@types/jest':
-        optional: true
-      jest:
-        optional: true
-      vitest:
-        optional: true
 
   '@tsconfig/node10@1.0.11':
     resolution: {integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==}
@@ -1278,8 +1261,8 @@ packages:
   dom-accessibility-api@0.6.3:
     resolution: {integrity: sha512-7ZgogeTnjuHbo+ct10G9Ffp0mif17idi0IyWNVA/wcwcm7NPOD/WEHVP3n7n3MhXqxoIYm8d6MuZohYWIZ4T3w==}
 
-  electron-to-chromium@1.4.833:
-    resolution: {integrity: sha512-aVGP9xK70Ysrzip1m5LoJjCp1EDrYzZ7Pg/O3QR1h3PAhmc8SNfSXV3kmmtkg5rNO42EcTYmLX3eFMgqALlGIA==}
+  electron-to-chromium@1.5.0:
+    resolution: {integrity: sha512-Vb3xHHYnLseK8vlMJQKJYXJ++t4u1/qJ3vykuVrVjvdiOEhYyT1AuP4x03G8EnPmYvYOhe9T+dADTmthjRQMkA==}
 
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
@@ -3156,7 +3139,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.4.7(vitest@2.0.4(@types/node@20.14.11)(jsdom@24.1.1))':
+  '@testing-library/jest-dom@6.4.8':
     dependencies:
       '@adobe/css-tools': 4.4.0
       '@babel/runtime': 7.24.8
@@ -3166,8 +3149,6 @@ snapshots:
       dom-accessibility-api: 0.6.3
       lodash: 4.17.21
       redent: 3.0.0
-    optionalDependencies:
-      vitest: 2.0.4(@types/node@20.14.11)(jsdom@24.1.1)
 
   '@tsconfig/node10@1.0.11': {}
 
@@ -3481,7 +3462,7 @@ snapshots:
   browserslist@4.23.2:
     dependencies:
       caniuse-lite: 1.0.30001643
-      electron-to-chromium: 1.4.833
+      electron-to-chromium: 1.5.0
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.2)
 
@@ -3634,7 +3615,7 @@ snapshots:
 
   dom-accessibility-api@0.6.3: {}
 
-  electron-to-chromium@1.4.833: {}
+  electron-to-chromium@1.5.0: {}
 
   entities@4.5.0: {}
 
@@ -4869,7 +4850,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-solid@2.10.2(@testing-library/jest-dom@6.4.7(vitest@2.0.4(@types/node@20.14.11)(jsdom@24.1.1)))(solid-js@1.8.18)(vite@5.3.4(@types/node@20.14.11)):
+  vite-plugin-solid@2.10.2(@testing-library/jest-dom@6.4.8)(solid-js@1.8.18)(vite@5.3.4(@types/node@20.14.11)):
     dependencies:
       '@babel/core': 7.24.9
       '@types/babel__core': 7.20.5
@@ -4880,7 +4861,7 @@ snapshots:
       vite: 5.3.4(@types/node@20.14.11)
       vitefu: 0.2.5(vite@5.3.4(@types/node@20.14.11))
     optionalDependencies:
-      '@testing-library/jest-dom': 6.4.7(vitest@2.0.4(@types/node@20.14.11)(jsdom@24.1.1))
+      '@testing-library/jest-dom': 6.4.8
     transitivePeerDependencies:
       - supports-color
 
