@@ -39,7 +39,9 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
 
     buildFrontend();
 
-    const functionName = `${environment}-apollo-api-gateway`;
+    const envNamePrefix = environment ? `${environment}-` : '';
+
+    const functionName = `${envNamePrefix}hono-lambda`;
     const logs = new awslogs.LogGroup(this, 'ApolloLambdaFunctionLogGroup', {
       logGroupName: `/aws/lambda/${functionName}`,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
@@ -62,6 +64,7 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
 
     const fn = new nodejs.NodejsFunction(this, 'Lambda', {
       runtime: lambda.Runtime.NODEJS_20_X,
+      architecture: lambda.Architecture.ARM_64,
       entry: './lambda/index.ts',
       functionName,
       retryAttempts: 0,
