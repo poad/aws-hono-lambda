@@ -18,7 +18,7 @@
     "@stylistic/eslint-plugin-js": "^2.6.1",
     "@stylistic/eslint-plugin-plus": "^2.6.1",
     "@stylistic/eslint-plugin-ts": "^2.6.1",
-    "@types/aws-lambda": "^8.10.142",
+    "@types/aws-lambda": "^8.10.143",
     "@types/node": "^22.1.0",
     "aws-cdk": "^2.151.0",
     "eslint": "^9.8.0",
@@ -26,7 +26,7 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.3.5",
+    "vite": "^5.4.0",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^2.0.5"
   },
