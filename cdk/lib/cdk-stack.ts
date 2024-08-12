@@ -149,7 +149,7 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
         "OriginAccessControl",
         {
           originAccessControlConfig: {
-            name: "Origin Access Control for Lambda Functions URL",
+            name: `OAC for Lambda Functions URL (${appName})`,
             originAccessControlOriginType: "lambda",
             signingBehavior: "always",
             signingProtocol: "sigv4",
