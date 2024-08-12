@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc --build --clean",
     "watch": "tsc -w",
-    "test": "vitest --run",
+    "test": "vitest --run --passWithNoTests",
     "cdk": "cdk",
     "eslint-check": "eslint './{bin,lib}/**/*.ts'",
     "eslint-fix": "eslint --fix './{bin,lib}/**/*.ts'",
