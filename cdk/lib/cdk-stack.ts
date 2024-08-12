@@ -41,8 +41,8 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
 
     const envNamePrefix = environment ? `${environment}-` : '';
 
-    const functionName = `${envNamePrefix}hono-lambda`;
-    const logs = new awslogs.LogGroup(this, 'ApolloLambdaFunctionLogGroup', {
+    const functionName = `${envNamePrefix}${appName}`;
+    new awslogs.LogGroup(this, 'LambdaFunctionLogGroup', {
       logGroupName: `/aws/lambda/${functionName}`,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       retention: awslogs.RetentionDays.ONE_DAY,
@@ -77,23 +77,6 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
         format: cdk.aws_lambda_nodejs.OutputFormat.ESM,
         ...devOptions.bundling,
       },
-      role: new iam.Role(this, 'ApolloLambdaFunctionExecutionRole', {
-        assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
-        inlinePolicies: {
-          'logs-policy': new iam.PolicyDocument({
-            statements: [
-              new iam.PolicyStatement({
-                effect: iam.Effect.ALLOW,
-                actions: [
-                  'logs:CreateLogStream',
-                  'logs:PutLogEvents',
-                ],
-                resources: [`${logs.logGroupArn}:*`],
-              }),
-            ],
-          }),
-        },
-      }),
     });
 
     const s3bucket = new s3.Bucket(this, 'S3Bucket', {
@@ -182,7 +165,7 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       cfnOriginAccessControl.attrId
     );
 
-    // Add permission Lambda Function URLs 
+    // Add permission Lambda Function URLs
     fn.addPermission("AllowCloudFrontServicePrincipal", {
       principal: new cdk.aws_iam.ServicePrincipal("cloudfront.amazonaws.com"),
       action: "lambda:InvokeFunctionUrl",

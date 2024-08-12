@@ -20,6 +20,7 @@
   "versionReporting": false,
   "pathMetadata": false,
   "context": {
+    "appName": "aws-hono-lambda",
     "default": {
       "stackName": "aws-hono-lambda",
       "bucketName": "aws-hono-lambda",

@@ -12,9 +12,11 @@ const config = env
   ? app.node.tryGetContext(env)
   : app.node.tryGetContext('default');
 
+const appName = app.node.tryGetContext('appName') ?? 'aws-hono-lambda';
+
 const stack = new CloudfrontCdnTemplateStack(app, config.stackName, {
   ...config,
-  appName: 'aws-hono-lambda',
+  appName,
   environment: env,
   env: {
     account: app.account,
