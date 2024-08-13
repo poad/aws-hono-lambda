@@ -11,15 +11,15 @@ importers:
   app:
     dependencies:
       '@solidjs/router':
-        specifier: ^0.14.1
-        version: 0.14.1(solid-js@1.8.20)
+        specifier: ^0.14.2
+        version: 0.14.2(solid-js@1.8.20)
       solid-js:
         specifier: ^1.8.20
         version: 1.8.20
     devDependencies:
       '@solidjs/testing-library':
         specifier: ^0.8.9
-        version: 0.8.9(@solidjs/router@0.14.1(solid-js@1.8.20))(solid-js@1.8.20)
+        version: 0.8.9(@solidjs/router@0.14.2(solid-js@1.8.20))(solid-js@1.8.20)
       '@stylistic/eslint-plugin':
         specifier: ^2.6.2
         version: 2.6.2(eslint@9.9.0)(typescript@5.5.4)
@@ -64,7 +64,7 @@ importers:
         version: 5.4.0(@types/node@22.2.0)
       vite-plugin-pages:
         specifier: ^0.32.3
-        version: 0.32.3(@solidjs/router@0.14.1(solid-js@1.8.20))(vite@5.4.0(@types/node@22.2.0))
+        version: 0.32.3(@solidjs/router@0.14.2(solid-js@1.8.20))(vite@5.4.0(@types/node@22.2.0))
       vite-plugin-solid:
         specifier: ^2.10.2
         version: 2.10.2(@testing-library/jest-dom@6.4.8)(solid-js@1.8.20)(vite@5.4.0(@types/node@22.2.0))
@@ -770,8 +770,8 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solidjs/router@0.14.1':
-    resolution: {integrity: sha512-GumQ4jbt5xDngLypAndC4EjapY/3DP0G8Az4YWEVQHdCtjHwB8IOm32eEBxE9lKpOffbtXV0r/0X0mofHJ1m5w==}
+  '@solidjs/router@0.14.2':
+    resolution: {integrity: sha512-JaJe7XJcZTyOfMOIVHmLO+3wP3akm5QQesrDU4XLn/JRMxozBzCaNXBsK7F8pBuDgxzRRxTV8RvXeS09HGXv6Q==}
     peerDependencies:
       solid-js: ^1.8.6
 
@@ -3059,16 +3059,16 @@ snapshots:
     dependencies:
       solid-js: 1.8.20
 
-  '@solidjs/router@0.14.1(solid-js@1.8.20)':
+  '@solidjs/router@0.14.2(solid-js@1.8.20)':
     dependencies:
       solid-js: 1.8.20
 
-  '@solidjs/testing-library@0.8.9(@solidjs/router@0.14.1(solid-js@1.8.20))(solid-js@1.8.20)':
+  '@solidjs/testing-library@0.8.9(@solidjs/router@0.14.2(solid-js@1.8.20))(solid-js@1.8.20)':
     dependencies:
       '@testing-library/dom': 10.4.0
       solid-js: 1.8.20
     optionalDependencies:
-      '@solidjs/router': 0.14.1(solid-js@1.8.20)
+      '@solidjs/router': 0.14.2(solid-js@1.8.20)
 
   '@stylistic/eslint-plugin-js@2.6.2(eslint@9.9.0)':
     dependencies:
@@ -4872,7 +4872,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-pages@0.32.3(@solidjs/router@0.14.1(solid-js@1.8.20))(vite@5.4.0(@types/node@22.2.0)):
+  vite-plugin-pages@0.32.3(@solidjs/router@0.14.2(solid-js@1.8.20))(vite@5.4.0(@types/node@22.2.0)):
     dependencies:
       '@types/debug': 4.1.12
       debug: 4.3.6
@@ -4885,7 +4885,7 @@ snapshots:
       vite: 5.4.0(@types/node@22.2.0)
       yaml: 2.5.0
     optionalDependencies:
-      '@solidjs/router': 0.14.1(solid-js@1.8.20)
+      '@solidjs/router': 0.14.2(solid-js@1.8.20)
     transitivePeerDependencies:
       - supports-color
 
