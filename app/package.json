@@ -15,11 +15,11 @@
     "lint-fix": "pnpm run /^.*:fix$/"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^2.6.3",
-    "@stylistic/eslint-plugin-js": "^2.6.3",
-    "@stylistic/eslint-plugin-plus": "^2.6.3",
-    "@stylistic/eslint-plugin-ts": "^2.6.3",
     "@solidjs/testing-library": "^0.8.9",
+    "@stylistic/eslint-plugin": "^2.6.4",
+    "@stylistic/eslint-plugin-js": "^2.6.4",
+    "@stylistic/eslint-plugin-plus": "^2.6.4",
+    "@stylistic/eslint-plugin-ts": "^2.6.4",
     "@testing-library/jest-dom": "^6.4.8",
     "eslint": "^9.9.0",
     "eslint-plugin-import": "^2.29.1",
