@@ -18,6 +18,7 @@
     "@solidjs/testing-library": "^0.8.9",
     "@stylistic/eslint-plugin": "^2.7.2",
     "@stylistic/eslint-plugin-js": "^2.7.2",
+    "@stylistic/eslint-plugin-jsx": "^2.7.2",
     "@stylistic/eslint-plugin-plus": "^2.7.2",
     "@stylistic/eslint-plugin-ts": "^2.7.2",
     "@testing-library/jest-dom": "^6.5.0",
