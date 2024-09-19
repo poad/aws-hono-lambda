@@ -20,7 +20,7 @@
     "@stylistic/eslint-plugin-ts": "^2.8.0",
     "@types/aws-lambda": "^8.10.145",
     "@types/node": "^22.5.5",
-    "aws-cdk": "^2.158.0",
+    "aws-cdk": "^2.159.0",
     "eslint": "^9.10.0",
     "eslint-plugin-import": "^2.30.0",
     "ts-node": "^10.9.2",
@@ -31,7 +31,7 @@
     "vitest": "^2.1.1"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.158.0",
+    "aws-cdk-lib": "^2.159.0",
     "constructs": "^10.3.0",
     "esbuild": "^0.23.1",
     "hono": "^4.6.2",
