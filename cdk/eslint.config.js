@@ -25,7 +25,7 @@ export default tseslint.config(
     ],
   },
   {
-    files: ['src/*.ts', 'src/**/*.ts'],
+    files: ['{bin,lib,lambda,function}/**/*.ts'],
     plugins: {
       '@stylistic': stylistic,
       '@stylistic/ts': stylisticTs,
@@ -38,7 +38,7 @@ export default tseslint.config(
       '@stylistic/jsx/jsx-indent': ['error', 2],
       'comma-dangle': ['error', 'always-multiline'],
       'arrow-parens': ['error', 'always'],
-      'quotes': ['error', 'single']
+      quotes: ['error', 'single'],
     },
   },
 );
