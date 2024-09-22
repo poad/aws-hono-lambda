@@ -25,7 +25,7 @@ export default tseslint.config(
     ],
   },
   {
-    files: ['{bin,lib,lambda,function}/**/*.ts'],
+    files: ['./{bin,lib,lambda,function}/**/*.ts'],
     plugins: {
       '@stylistic': stylistic,
       '@stylistic/ts': stylisticTs,
