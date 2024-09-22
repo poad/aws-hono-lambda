@@ -8,7 +8,7 @@ import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as awslogs from 'aws-cdk-lib/aws-logs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import { buildFrontend } from './process/setup';
-import * as deployment from "aws-cdk-lib/aws-s3-deployment";
+import * as deployment from 'aws-cdk-lib/aws-s3-deployment';
 
 export interface Config extends cdk.StackProps {
   bucketName: string;
@@ -60,7 +60,7 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       },
     };
 
-    const apiRootPath = '/api/'
+    const apiRootPath = '/api/';
 
     const fn = new nodejs.NodejsFunction(this, 'Lambda', {
       runtime: lambda.Runtime.NODEJS_20_X,
@@ -124,7 +124,8 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
         [`${apiRootPath}*`]: {
           origin: new origins.FunctionUrlOrigin(fn.addFunctionUrl({
             authType: cdk.aws_lambda.FunctionUrlAuthType.AWS_IAM,
-          }), {
+          }),
+          {
             originId: 'lambda',
           }),
           viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
@@ -134,15 +135,15 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
     });
 
-    const deployRole = new iam.Role(this, "DeployWebsiteRole", {
+    const deployRole = new iam.Role(this, 'DeployWebsiteRole', {
       roleName: `${appName}-deploy-role`,
-      assumedBy: new iam.ServicePrincipal("lambda.amazonaws.com"),
+      assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
       inlinePolicies: {
-        "s3-policy": new iam.PolicyDocument({
+        's3-policy': new iam.PolicyDocument({
           statements: [
             new iam.PolicyStatement({
               effect: iam.Effect.ALLOW,
-              actions: ["s3:*"],
+              actions: ['s3:*'],
               resources: [`${s3bucket.bucketArn}/`, `${s3bucket.bucketArn}/*`],
             }),
           ],
@@ -150,11 +151,11 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       },
     });
 
-    new deployment.BucketDeployment(this, "DeployWebsite", {
+    new deployment.BucketDeployment(this, 'DeployWebsite', {
       sources: [deployment.Source.asset(`${process.cwd()}/../app/dist`)],
       destinationBucket: s3bucket,
-      destinationKeyPrefix: "/",
-      exclude: [".DS_Store", "*/.DS_Store"],
+      destinationKeyPrefix: '/',
+      exclude: ['.DS_Store', '*/.DS_Store'],
       prune: true,
       retainOnDelete: false,
       role: deployRole,
@@ -164,29 +165,29 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
     const cfnOriginAccessControl =
       new cdk.aws_cloudfront.CfnOriginAccessControl(
         this,
-        "OriginAccessControl",
+        'OriginAccessControl',
         {
           originAccessControlConfig: {
             name: `OAC for Lambda Functions URL (${appName})`,
-            originAccessControlOriginType: "lambda",
-            signingBehavior: "always",
-            signingProtocol: "sigv4",
+            originAccessControlOriginType: 'lambda',
+            signingBehavior: 'always',
+            signingProtocol: 'sigv4',
           },
-        }
+        },
       );
 
     const cfnDistribution = cf.node.defaultChild as cdk.aws_cloudfront.CfnDistribution;
 
     // Set OAC
     cfnDistribution.addPropertyOverride(
-      "DistributionConfig.Origins.1.OriginAccessControlId",
-      cfnOriginAccessControl.attrId
+      'DistributionConfig.Origins.1.OriginAccessControlId',
+      cfnOriginAccessControl.attrId,
     );
 
     // Add permission Lambda Function URLs
-    fn.addPermission("AllowCloudFrontServicePrincipal", {
-      principal: new cdk.aws_iam.ServicePrincipal("cloudfront.amazonaws.com"),
-      action: "lambda:InvokeFunctionUrl",
+    fn.addPermission('AllowCloudFrontServicePrincipal', {
+      principal: new iam.ServicePrincipal('cloudfront.amazonaws.com'),
+      action: 'lambda:InvokeFunctionUrl',
       sourceArn: `arn:aws:cloudfront::${cdk.Stack.of(this).account}:distribution/${cf.distributionId}`,
     });
 

@@ -9,10 +9,8 @@
     "build": "vite build",
     "serve": "vite preview",
     "test": "vitest --run --passWithNoTests",
-    "eslint:check": "eslint",
-    "eslint:fix": "eslint --fix",
-    "lint": "pnpm run --parallel /^.*:check$/",
-    "lint-fix": "pnpm run /^.*:fix$/"
+    "lint": "eslint",
+    "lint-fix": "eslint --fix"
   },
   "devDependencies": {
     "@solidjs/testing-library": "^0.8.9",
