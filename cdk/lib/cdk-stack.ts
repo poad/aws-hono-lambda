@@ -85,21 +85,22 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       autoDeleteObjects: true,
       websiteIndexDocument: 'index.html',
-      publicReadAccess: true,
-      blockPublicAccess: {
-        blockPublicAcls: false,
-        blockPublicPolicy: false,
-        ignorePublicAcls: false,
-        restrictPublicBuckets: false,
-      },
+      publicReadAccess: false,
       encryption: s3.BucketEncryption.S3_MANAGED,
+    });
+
+    const s3oac = new cloudfront.S3OriginAccessControl(this, 'S3OAC', {
+      originAccessControlName: `OAC for S3 (${appName})`,
+      signing: cloudfront.Signing.SIGV4_NO_OVERRIDE,
     });
 
     const cf = new cloudfront.Distribution(this, 'CloudFront', {
       comment,
       defaultBehavior: {
-        origin: new origins.HttpOrigin(s3bucket.bucketWebsiteDomainName, {
-          protocolPolicy: cloudfront.OriginProtocolPolicy.HTTP_ONLY,
+        origin: origins.S3BucketOrigin.withOriginAccessControl(s3bucket, {
+          originAccessControl: s3oac,
+          originAccessLevels: [cloudfront.AccessLevel.READ],
+          originId: 's3',
         }),
         cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
