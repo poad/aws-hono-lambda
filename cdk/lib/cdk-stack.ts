@@ -89,27 +89,44 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       encryption: s3.BucketEncryption.S3_MANAGED,
     });
 
-    const s3oac = new cloudfront.S3OriginAccessControl(this, 'S3OAC', {
+    const originAccessControl = new cloudfront.S3OriginAccessControl(this, 'S3OAC', {
       originAccessControlName: `OAC for S3 (${appName})`,
       signing: cloudfront.Signing.SIGV4_NO_OVERRIDE,
     });
+
+    const websiteIndexPageForwardFunction = new cloudfront.Function(this, 'WebsiteIndexPageForwardFunction', {
+      functionName: `${appName}-index-forword`,
+      code: cloudfront.FunctionCode.fromFile({
+        filePath: 'function/index.js',
+      }),
+      runtime: cloudfront.FunctionRuntime.JS_2_0,
+    });
+    const functionAssociations = [
+      {
+        eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
+        function: websiteIndexPageForwardFunction,
+      },
+    ];
 
     const cf = new cloudfront.Distribution(this, 'CloudFront', {
       comment,
       defaultBehavior: {
         origin: origins.S3BucketOrigin.withOriginAccessControl(s3bucket, {
-          originAccessControl: s3oac,
+          originAccessControl,
           originAccessLevels: [cloudfront.AccessLevel.READ],
           originId: 's3',
         }),
         cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        functionAssociations,
       },
       additionalBehaviors: {
         [`${apiRootPath}*`]: {
           origin: new origins.FunctionUrlOrigin(fn.addFunctionUrl({
             authType: cdk.aws_lambda.FunctionUrlAuthType.AWS_IAM,
-          })),
+          }), {
+            originId: 'lambda',
+          }),
           viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
           cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
         },
