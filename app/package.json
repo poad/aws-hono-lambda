@@ -13,7 +13,7 @@
     "lint-fix": "eslint --fix"
   },
   "devDependencies": {
-    "@solidjs/testing-library": "^0.8.9",
+    "@solidjs/testing-library": "^0.8.10",
     "@stylistic/eslint-plugin": "^2.8.0",
     "@stylistic/eslint-plugin-js": "^2.8.0",
     "@stylistic/eslint-plugin-jsx": "^2.8.0",
