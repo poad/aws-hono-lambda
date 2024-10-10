@@ -11,15 +11,15 @@ importers:
   app:
     dependencies:
       '@solidjs/router':
-        specifier: ^0.14.7
-        version: 0.14.7(solid-js@1.9.2)
+        specifier: ^0.14.8
+        version: 0.14.8(solid-js@1.9.2)
       solid-js:
         specifier: ^1.9.2
         version: 1.9.2
     devDependencies:
       '@solidjs/testing-library':
         specifier: ^0.8.10
-        version: 0.8.10(@solidjs/router@0.14.7(solid-js@1.9.2))(solid-js@1.9.2)
+        version: 0.8.10(@solidjs/router@0.14.8(solid-js@1.9.2))(solid-js@1.9.2)
       '@stylistic/eslint-plugin':
         specifier: ^2.9.0
         version: 2.9.0(eslint@9.12.0)(typescript@5.6.3)
@@ -67,7 +67,7 @@ importers:
         version: 5.4.8(@types/node@22.7.5)
       vite-plugin-pages:
         specifier: ^0.32.3
-        version: 0.32.3(@solidjs/router@0.14.7(solid-js@1.9.2))(vite@5.4.8(@types/node@22.7.5))
+        version: 0.32.3(@solidjs/router@0.14.8(solid-js@1.9.2))(vite@5.4.8(@types/node@22.7.5))
       vite-plugin-solid:
         specifier: ^2.10.2
         version: 2.10.2(@testing-library/jest-dom@6.5.0)(solid-js@1.9.2)(vite@5.4.8(@types/node@22.7.5))
@@ -79,10 +79,10 @@ importers:
     dependencies:
       aws-cdk-lib:
         specifier: ^2.161.1
-        version: 2.161.1(constructs@10.3.0)
+        version: 2.161.1(constructs@10.3.1)
       constructs:
-        specifier: ^10.3.0
-        version: 10.3.0
+        specifier: ^10.3.1
+        version: 10.3.1
       esbuild:
         specifier: ^0.24.0
         version: 0.24.0
@@ -805,8 +805,8 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solidjs/router@0.14.7':
-    resolution: {integrity: sha512-agLf8AUz5XnW6+F64a4Iq+QQQobI5zGHQ/gUYd/WHSwcbnFpavbsiwRLob3YhWMXVX3sQyn4ekUN+uchMCRupw==}
+  '@solidjs/router@0.14.8':
+    resolution: {integrity: sha512-S+rD5Twp0820cM03wEIYtb7/4KN7Cfr3BP+qPIqb7IXO/SZ72tWqHEMQsmcjDbr4yVfpA+5Sq0Y+xcq09y1gQA==}
     peerDependencies:
       solid-js: ^1.8.6
 
@@ -1189,9 +1189,9 @@ packages:
   confbox@0.1.8:
     resolution: {integrity: sha512-RMtmw0iFkeR4YV+fUOSucriAQNb9g8zFR52MWCtl+cCZOFRNL6zeB395vPzFhEjjn4fMxXudmELnl/KF/WrK6w==}
 
-  constructs@10.3.0:
-    resolution: {integrity: sha512-vbK8i3rIb/xwZxSpTjz3SagHn1qq9BChLEfy5Hf6fB3/2eFbrwt2n9kHwQcS0CPTRBesreeAcsJfMq2229FnbQ==}
-    engines: {node: '>= 16.14.0'}
+  constructs@10.3.1:
+    resolution: {integrity: sha512-gTyTNR3iHOVnOk4cKPK6QHRrSZWT1nsnEMFnwLa094/w1L+CKToQel4v4oxnYHi4L07PBNm1p3Bt0WVZI4kgkg==}
+    engines: {node: '>= 18.12.0'}
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -3009,16 +3009,16 @@ snapshots:
     dependencies:
       solid-js: 1.9.2
 
-  '@solidjs/router@0.14.7(solid-js@1.9.2)':
+  '@solidjs/router@0.14.8(solid-js@1.9.2)':
     dependencies:
       solid-js: 1.9.2
 
-  '@solidjs/testing-library@0.8.10(@solidjs/router@0.14.7(solid-js@1.9.2))(solid-js@1.9.2)':
+  '@solidjs/testing-library@0.8.10(@solidjs/router@0.14.8(solid-js@1.9.2))(solid-js@1.9.2)':
     dependencies:
       '@testing-library/dom': 10.4.0
       solid-js: 1.9.2
     optionalDependencies:
-      '@solidjs/router': 0.14.7(solid-js@1.9.2)
+      '@solidjs/router': 0.14.8(solid-js@1.9.2)
 
   '@stylistic/eslint-plugin-js@2.9.0(eslint@9.12.0)':
     dependencies:
@@ -3352,13 +3352,13 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  aws-cdk-lib@2.161.1(constructs@10.3.0):
+  aws-cdk-lib@2.161.1(constructs@10.3.1):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.206
       '@aws-cdk/asset-kubectl-v20': 2.1.2
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
       '@aws-cdk/cloud-assembly-schema': 38.0.1
-      constructs: 10.3.0
+      constructs: 10.3.1
 
   aws-cdk@2.161.1:
     optionalDependencies:
@@ -3464,7 +3464,7 @@ snapshots:
 
   confbox@0.1.8: {}
 
-  constructs@10.3.0: {}
+  constructs@10.3.1: {}
 
   convert-source-map@2.0.0: {}
 
@@ -4689,7 +4689,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-pages@0.32.3(@solidjs/router@0.14.7(solid-js@1.9.2))(vite@5.4.8(@types/node@22.7.5)):
+  vite-plugin-pages@0.32.3(@solidjs/router@0.14.8(solid-js@1.9.2))(vite@5.4.8(@types/node@22.7.5)):
     dependencies:
       '@types/debug': 4.1.12
       debug: 4.3.7
@@ -4702,7 +4702,7 @@ snapshots:
       vite: 5.4.8(@types/node@22.7.5)
       yaml: 2.5.1
     optionalDependencies:
-      '@solidjs/router': 0.14.7(solid-js@1.9.2)
+      '@solidjs/router': 0.14.8(solid-js@1.9.2)
     transitivePeerDependencies:
       - supports-color
 
