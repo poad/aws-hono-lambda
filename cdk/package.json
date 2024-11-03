@@ -12,14 +12,14 @@
     "lint-fix": "eslint --fix './{bin,lib,lambda,function}/**/*.ts'"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^2.10.0",
-    "@stylistic/eslint-plugin-js": "^2.10.0",
-    "@stylistic/eslint-plugin-plus": "^2.10.0",
-    "@stylistic/eslint-plugin-ts": "^2.10.0",
+    "@stylistic/eslint-plugin": "^2.10.1",
+    "@stylistic/eslint-plugin-js": "^2.10.1",
+    "@stylistic/eslint-plugin-plus": "^2.10.1",
+    "@stylistic/eslint-plugin-ts": "^2.10.1",
     "@types/aws-lambda": "^8.10.145",
-    "@types/node": "^22.8.5",
-    "aws-cdk": "^2.164.1",
-    "eslint": "^9.13.0",
+    "@types/node": "^22.8.7",
+    "aws-cdk": "^2.165.0",
+    "eslint": "^9.14.0",
     "eslint-plugin-import": "^2.31.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3",
@@ -29,7 +29,7 @@
     "vitest": "^2.1.4"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.164.1",
+    "aws-cdk-lib": "^2.165.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.24.0",
     "hono": "^4.6.8",
