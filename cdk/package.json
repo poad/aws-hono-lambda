@@ -29,7 +29,7 @@
     "vitest": "^2.1.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.166.0",
+    "aws-cdk-lib": "^2.167.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.24.0",
     "hono": "^4.6.10",
