@@ -24,14 +24,14 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.1",
-    "vite": "^6.0.4",
+    "vite": "^6.0.5",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^2.1.8"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.173.2",
     "constructs": "^10.4.2",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.24.2",
     "hono": "^4.6.14",
     "source-map-support": "^0.5.21"
   }
