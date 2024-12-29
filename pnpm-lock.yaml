@@ -78,8 +78,8 @@ importers:
   cdk:
     dependencies:
       aws-cdk-lib:
-        specifier: ^2.173.2
-        version: 2.173.2(constructs@10.4.2)
+        specifier: ^2.173.4
+        version: 2.173.4(constructs@10.4.2)
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -87,8 +87,8 @@ importers:
         specifier: ^0.24.2
         version: 0.24.2
       hono:
-        specifier: ^4.6.14
-        version: 4.6.14
+        specifier: ^4.6.15
+        version: 4.6.15
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -112,8 +112,8 @@ importers:
         specifier: ^22.10.2
         version: 22.10.2
       aws-cdk:
-        specifier: ^2.173.2
-        version: 2.173.2
+        specifier: ^2.173.4
+        version: 2.173.4
       eslint:
         specifier: ~9.17.0
         version: 9.17.0
@@ -1067,8 +1067,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.173.2:
-    resolution: {integrity: sha512-cL9+z8Pl3VZGoO7BwdsrFAOeud/vSl3at7OvmhihbNprMN15XuFUx/rViAU5OI1m92NbV4NBzYSLbSeCwYLNyw==}
+  aws-cdk-lib@2.173.4:
+    resolution: {integrity: sha512-0reN94TzkWmyVZDDBlYB4qzJUig8wTHEe82YLHlWRUhrU78fT+drVGUr+lYZwwETaZ+8fLdCOl9ULvFNq7iczQ==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -1085,8 +1085,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.173.2:
-    resolution: {integrity: sha512-qyMU4FoRJdZDUpsOBqyRBALBjf5A2N/MaHKX9iJUkbTET+d+nR07x3ai4TcEES+8pqPFHMTKpQMRDXs9Py/15w==}
+  aws-cdk@2.173.4:
+    resolution: {integrity: sha512-zgs3xU28VEKIwHwJHu0ZHeoEmwLGnHS2jPCMc2MsIMZu+a7CKyE77Tw6LwJkuuB96BQyqr6xJB3SbeWjXmcFhQ==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
 
@@ -1296,8 +1296,8 @@ packages:
     resolution: {integrity: sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==}
     engines: {node: '>= 0.4'}
 
-  es-module-lexer@1.5.4:
-    resolution: {integrity: sha512-MVNK56NiMrOwitFB7cqDwq0CQutbw+0BvLshJSse0MUNU+y1FC3bUS/AQg7oUng+/wKrrki7JfmwtVHkVfPLlw==}
+  es-module-lexer@1.6.0:
+    resolution: {integrity: sha512-qqnD1yMU6tk/jnaMosogGySTZP8YtUgAffA9nMN+E/rjxcfRQ6IEk7IiozUjgxKoFHBGjTLnrHB/YC45r/59EQ==}
 
   es-object-atoms@1.0.0:
     resolution: {integrity: sha512-MZ4iQ6JwHOBQjahnjwaC1ZtIBH+2ohjamzAO3oaHcXYup7qxjF2fixyH+Q71voWHeOkI2q/TnJao/KfXYIZWbw==}
@@ -1566,8 +1566,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.6.14:
-    resolution: {integrity: sha512-j4VkyUp2xazGJ8eCCLN1Vm/bxdvm/j5ZuU9AIjLu9vapn2M44p9L3Ktr9Vnb2RN2QtcR/wVjZVMlT5k7GJQgPw==}
+  hono@4.6.15:
+    resolution: {integrity: sha512-OiQwvAOAaI2JrABBH69z5rsctHDzFzIKJge0nYXgtzGJ0KftwLWcBXm1upJC23/omNRtnqM0gjRMbtXshPdqhQ==}
     engines: {node: '>=16.9.0'}
 
   html-encoding-sniffer@4.0.0:
@@ -1945,8 +1945,8 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
-  pkg-types@1.2.1:
-    resolution: {integrity: sha512-sQoqa8alT3nHjGuTjuKgOnvjo4cljkufdtLMnO2LBP/wRwuDlo1tkaEdMxCRhyGRPacv/ztlZgDPm2b7FAmEvw==}
+  pkg-types@1.3.0:
+    resolution: {integrity: sha512-kS7yWjVFCkIw9hqdJBoMxDdzEngmkr5FXeWZZfQ6GoYacjVnsW6l2CcYW/0ThD0vF4LPJgVYnrg4d0uuhwYQbg==}
 
   possible-typed-array-names@1.0.0:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
@@ -2177,11 +2177,11 @@ packages:
     resolution: {integrity: sha512-n1cw8k1k0x4pgA2+9XrOkFydTerNcJ1zWCO5Nn9scWHTD+5tp8dghT2x1uduQePZTZgd3Tupf+x9BxJjeJi77Q==}
     engines: {node: '>=14.0.0'}
 
-  tldts-core@6.1.69:
-    resolution: {integrity: sha512-nygxy9n2PBUFQUtAXAc122gGo+04/j5qr5TGQFZTHafTKYvmARVXt2cA5rgero2/dnXUfkdPtiJoKmrd3T+wdA==}
+  tldts-core@6.1.70:
+    resolution: {integrity: sha512-RNnIXDB1FD4T9cpQRErEqw6ZpjLlGdMOitdV+0xtbsnwr4YFka1zpc7D4KD+aAn8oSG5JyFrdasZTE04qDE9Yg==}
 
-  tldts@6.1.69:
-    resolution: {integrity: sha512-Oh/CqRQ1NXNY7cy9NkTPUauOWiTro0jEYZTioGbOmcQh6EC45oribyIMJp0OJO3677r13tO6SKdWoGZUx2BDFw==}
+  tldts@6.1.70:
+    resolution: {integrity: sha512-/W1YVgYVJd9ZDjey5NXadNh0mJXkiUMUue9Zebd0vpdo1sU+H4zFFTaJ1RKD4N6KFoHfcXy6l+Vu7bh+bdWCzA==}
     hasBin: true
 
   to-regex-range@5.0.1:
@@ -3387,7 +3387,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  aws-cdk-lib@2.173.2(constructs@10.4.2):
+  aws-cdk-lib@2.173.4(constructs@10.4.2):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.216
       '@aws-cdk/asset-kubectl-v20': 2.1.3
@@ -3395,7 +3395,7 @@ snapshots:
       '@aws-cdk/cloud-assembly-schema': 38.0.1
       constructs: 10.4.2
 
-  aws-cdk@2.173.2:
+  aws-cdk@2.173.4:
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -3642,7 +3642,7 @@ snapshots:
 
   es-errors@1.3.0: {}
 
-  es-module-lexer@1.5.4: {}
+  es-module-lexer@1.6.0: {}
 
   es-object-atoms@1.0.0:
     dependencies:
@@ -3998,7 +3998,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.6.14: {}
+  hono@4.6.15: {}
 
   html-encoding-sniffer@4.0.0:
     dependencies:
@@ -4219,7 +4219,7 @@ snapshots:
   local-pkg@0.5.1:
     dependencies:
       mlly: 1.7.3
-      pkg-types: 1.2.1
+      pkg-types: 1.3.0
 
   locate-path@6.0.0:
     dependencies:
@@ -4278,7 +4278,7 @@ snapshots:
     dependencies:
       acorn: 8.14.0
       pathe: 1.1.2
-      pkg-types: 1.2.1
+      pkg-types: 1.3.0
       ufo: 1.5.4
 
   ms@2.1.3: {}
@@ -4367,7 +4367,7 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pkg-types@1.2.1:
+  pkg-types@1.3.0:
     dependencies:
       confbox: 0.1.8
       mlly: 1.7.3
@@ -4639,11 +4639,11 @@ snapshots:
 
   tinyspy@3.0.2: {}
 
-  tldts-core@6.1.69: {}
+  tldts-core@6.1.70: {}
 
-  tldts@6.1.69:
+  tldts@6.1.70:
     dependencies:
-      tldts-core: 6.1.69
+      tldts-core: 6.1.70
 
   to-regex-range@5.0.1:
     dependencies:
@@ -4651,7 +4651,7 @@ snapshots:
 
   tough-cookie@5.0.0:
     dependencies:
-      tldts: 6.1.69
+      tldts: 6.1.70
 
   tr46@5.0.0:
     dependencies:
@@ -4768,7 +4768,7 @@ snapshots:
     dependencies:
       cac: 6.7.14
       debug: 4.4.0
-      es-module-lexer: 1.5.4
+      es-module-lexer: 1.6.0
       pathe: 1.1.2
       vite: 5.4.11(@types/node@22.10.2)
     transitivePeerDependencies:
