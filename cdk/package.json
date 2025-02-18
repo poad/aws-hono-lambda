@@ -13,13 +13,13 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
-    "@stylistic/eslint-plugin": "^3.1.0",
-    "@stylistic/eslint-plugin-js": "^3.1.0",
-    "@stylistic/eslint-plugin-plus": "^3.1.0",
-    "@stylistic/eslint-plugin-ts": "^3.1.0",
+    "@stylistic/eslint-plugin": "^4.0.0",
+    "@stylistic/eslint-plugin-js": "^4.0.0",
+    "@stylistic/eslint-plugin-plus": "^4.0.0",
+    "@stylistic/eslint-plugin-ts": "^4.0.0",
     "@types/aws-lambda": "^8.10.147",
     "@types/node": "^22.13.4",
-    "aws-cdk": "^2.178.2",
+    "aws-cdk": "^2.1000.0",
     "eslint": "~9.20.1",
     "eslint-plugin-import": "^2.31.0",
     "ts-node": "^10.9.2",
@@ -27,10 +27,10 @@
     "typescript-eslint": "^8.24.1",
     "vite": "^6.1.0",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.5"
+    "vitest": "^3.0.6"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.178.2",
+    "aws-cdk-lib": "^2.179.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.25.0",
     "hono": "^4.7.1",
