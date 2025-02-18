@@ -15,11 +15,11 @@
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "@solidjs/testing-library": "^0.8.10",
-    "@stylistic/eslint-plugin": "^3.1.0",
-    "@stylistic/eslint-plugin-js": "^3.1.0",
-    "@stylistic/eslint-plugin-jsx": "^3.1.0",
-    "@stylistic/eslint-plugin-plus": "^3.1.0",
-    "@stylistic/eslint-plugin-ts": "^3.1.0",
+    "@stylistic/eslint-plugin": "^4.0.0",
+    "@stylistic/eslint-plugin-js": "^4.0.0",
+    "@stylistic/eslint-plugin-jsx": "^4.0.0",
+    "@stylistic/eslint-plugin-plus": "^4.0.0",
+    "@stylistic/eslint-plugin-ts": "^4.0.0",
     "@testing-library/jest-dom": "^6.6.3",
     "eslint": "~9.20.1",
     "eslint-plugin-import": "^2.31.0",
@@ -32,7 +32,7 @@
     "vite": "^6.1.0",
     "vite-plugin-pages": "^0.32.4",
     "vite-plugin-solid": "^2.11.1",
-    "vitest": "^3.0.5"
+    "vitest": "^3.0.6"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.3",
