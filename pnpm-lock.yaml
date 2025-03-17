@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       pnpm:
-        specifier: ^10.6.3
-        version: 10.6.3
+        specifier: ^10.6.4
+        version: 10.6.4
 
   app:
     dependencies:
@@ -1874,8 +1874,8 @@ packages:
   pkg-types@2.1.0:
     resolution: {integrity: sha512-wmJwA+8ihJixSoHKxZJRBQG1oY8Yr9pGLzRmSsNms0iNWyHHAlZCa7mmKiFR10YPZuz/2k169JiS/inOjBCZ2A==}
 
-  pnpm@10.6.3:
-    resolution: {integrity: sha512-u0XjTVCpp26FipWDcwG/tr1tNa6ixdUglPpJekZ8Q/XEQBA84lEengovicPWBxuqwzWPxorG+3XizrPSc2Bl5g==}
+  pnpm@10.6.4:
+    resolution: {integrity: sha512-2j1xW/0iqaEF5ugIjPx4JmmTMt7WDEI7FOxhOhhfFgIgZwL/D+TEOMsVyXkIHOTLAlaONksVF0UDpjx6jipfbA==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -4262,7 +4262,7 @@ snapshots:
       exsolve: 1.0.4
       pathe: 2.0.3
 
-  pnpm@10.6.3: {}
+  pnpm@10.6.4: {}
 
   possible-typed-array-names@1.1.0: {}
 
