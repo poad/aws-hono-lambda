@@ -30,7 +30,7 @@
     "vitest": "^3.0.9"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.184.1",
+    "aws-cdk-lib": "^2.185.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.25.1",
     "hono": "^4.7.4",
