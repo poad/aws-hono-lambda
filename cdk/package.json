@@ -17,7 +17,7 @@
     "@stylistic/eslint-plugin-js": "^4.2.0",
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
-    "@types/aws-lambda": "^8.10.148",
+    "@types/aws-lambda": "^8.10.149",
     "@types/node": "^22.14.0",
     "aws-cdk": "^2.1007.0",
     "eslint": "~9.24.0",
@@ -25,12 +25,12 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1",
-    "vite": "^6.2.5",
+    "vite": "^6.2.6",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.1.1"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.188.0",
+    "aws-cdk-lib": "^2.189.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.25.2",
     "hono": "^4.7.6",
