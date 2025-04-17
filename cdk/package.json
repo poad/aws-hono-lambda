@@ -25,12 +25,12 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.0",
+    "vite": "^6.3.1",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.1.1"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.189.1",
+    "aws-cdk-lib": "^2.190.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.25.2",
     "hono": "^4.7.7",
