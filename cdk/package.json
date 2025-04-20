@@ -12,7 +12,7 @@
     "lint-fix": "eslint --fix './{bin,lib,lambda,function}/**/*.ts'"
   },
   "devDependencies": {
-    "@eslint/js": "^9.24.0",
+    "@eslint/js": "^9.25.0",
     "@stylistic/eslint-plugin": "^4.2.0",
     "@stylistic/eslint-plugin-js": "^4.2.0",
     "@stylistic/eslint-plugin-plus": "^4.2.0",
@@ -20,7 +20,7 @@
     "@types/aws-lambda": "^8.10.149",
     "@types/node": "^22.14.1",
     "aws-cdk": "^2.1010.0",
-    "eslint": "~9.24.0",
+    "eslint": "~9.25.0",
     "eslint-plugin-import": "^2.31.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
