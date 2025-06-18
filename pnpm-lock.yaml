@@ -61,8 +61,8 @@ importers:
         specifier: ^3.5.3
         version: 3.5.3
       solid-devtools:
-        specifier: ^0.34.1
-        version: 0.34.1(solid-js@1.9.7)(vite@6.3.5(@types/node@24.0.3)(yaml@2.8.0))
+        specifier: ^0.34.2
+        version: 0.34.2(solid-js@1.9.7)(vite@6.3.5(@types/node@24.0.3)(yaml@2.8.0))
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -94,8 +94,8 @@ importers:
         specifier: ^0.25.5
         version: 0.25.5
       hono:
-        specifier: ^4.7.11
-        version: 4.7.11
+        specifier: ^4.8.0
+        version: 4.8.0
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -644,8 +644,8 @@ packages:
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
-  '@solid-devtools/debugger@0.27.1':
-    resolution: {integrity: sha512-n0ikgx21eXe9VQWfcDXUJ7W8l3k4G6BD9iwZIhTIxIko3fXB2GOeyyJTICHrfudWGor4Kx04RAiSxUZXEyVeVw==}
+  '@solid-devtools/debugger@0.28.0':
+    resolution: {integrity: sha512-HBtcU3rSt1u+IrOtEcDBzkjSdyOpgdnc1aQCpwUPPl1CMdNWU/qku0GNrNrb50H8z+iqxc+ZZmvDV7Vl3a2/CQ==}
     peerDependencies:
       solid-js: ^1.9.0
 
@@ -1230,8 +1230,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  electron-to-chromium@1.5.167:
-    resolution: {integrity: sha512-LxcRvnYO5ez2bMOFpbuuVuAI5QNeY1ncVytE/KXaL6ZNfzX1yPlAO0nSOyIHx2fVAuUprMqPs/TdVhUFZy7SIQ==}
+  electron-to-chromium@1.5.170:
+    resolution: {integrity: sha512-GP+M7aeluQo9uAyiTCxgIj/j+PrWhMlY7LFVj8prlsPljd0Fdg9AprlfUi+OCSFWy9Y5/2D/Jrj9HS8Z4rpKWA==}
 
   entities@6.0.1:
     resolution: {integrity: sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g==}
@@ -1543,8 +1543,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.7.11:
-    resolution: {integrity: sha512-rv0JMwC0KALbbmwJDEnxvQCeJh+xbS3KEWW5PC9cMJ08Ur9xgatI0HmtgYZfOdOSOeYsp5LO2cOhdI8cLEbDEQ==}
+  hono@4.8.0:
+    resolution: {integrity: sha512-NoiHrqJxoe1MYXqW+/0/Q4NCizKj2Ivm4KmX8mOSBtw9UJ7KYaOGKkO7csIwO5UlZpfvVRdcgiMb0GGyjEjtcw==}
     engines: {node: '>=16.9.0'}
 
   html-encoding-sniffer@4.0.0:
@@ -2090,8 +2090,8 @@ packages:
   siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
 
-  solid-devtools@0.34.1:
-    resolution: {integrity: sha512-Yrw5cst2DqXMv257I0ywi6GhcClpeEBGQ978FSvbNdIx6ICL3oQ31rMluwUt7hwh9edCulxyb5l2yuYR6ESNpQ==}
+  solid-devtools@0.34.2:
+    resolution: {integrity: sha512-9iqQxeAo79ihGIlQ0POhiBnpDgajqNfxE3n58OVHzT9LaXgQ7I6wpA2Ed91uHsPk6OkUNs8B0Ld7+PlaZHrJcw==}
     peerDependencies:
       solid-js: ^1.9.0
       vite: ^2.2.3 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
@@ -2899,7 +2899,7 @@ snapshots:
 
   '@rtsao/scc@1.1.0': {}
 
-  '@solid-devtools/debugger@0.27.1(solid-js@1.9.7)':
+  '@solid-devtools/debugger@0.28.0(solid-js@1.9.7)':
     dependencies:
       '@nothing-but/utils': 0.17.0
       '@solid-devtools/shared': 0.20.0(solid-js@1.9.7)
@@ -3446,7 +3446,7 @@ snapshots:
   browserslist@4.25.0:
     dependencies:
       caniuse-lite: 1.0.30001723
-      electron-to-chromium: 1.5.167
+      electron-to-chromium: 1.5.170
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.0)
 
@@ -3595,7 +3595,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  electron-to-chromium@1.5.167: {}
+  electron-to-chromium@1.5.170: {}
 
   entities@6.0.1: {}
 
@@ -4009,7 +4009,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.7.11: {}
+  hono@4.8.0: {}
 
   html-encoding-sniffer@4.0.0:
     dependencies:
@@ -4593,12 +4593,12 @@ snapshots:
 
   siginfo@2.0.0: {}
 
-  solid-devtools@0.34.1(solid-js@1.9.7)(vite@6.3.5(@types/node@24.0.3)(yaml@2.8.0)):
+  solid-devtools@0.34.2(solid-js@1.9.7)(vite@6.3.5(@types/node@24.0.3)(yaml@2.8.0)):
     dependencies:
       '@babel/core': 7.27.4
       '@babel/plugin-syntax-typescript': 7.27.1(@babel/core@7.27.4)
       '@babel/types': 7.27.6
-      '@solid-devtools/debugger': 0.27.1(solid-js@1.9.7)
+      '@solid-devtools/debugger': 0.28.0(solid-js@1.9.7)
       '@solid-devtools/shared': 0.20.0(solid-js@1.9.7)
       solid-js: 1.9.7
     optionalDependencies:
