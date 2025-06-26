@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       pnpm:
-        specifier: ^10.12.3
-        version: 10.12.3
+        specifier: ^10.12.4
+        version: 10.12.4
 
   app:
     dependencies:
@@ -58,8 +58,8 @@ importers:
         specifier: ^26.1.0
         version: 26.1.0
       prettier:
-        specifier: ^3.6.0
-        version: 3.6.0
+        specifier: ^3.6.1
+        version: 3.6.1
       solid-devtools:
         specifier: ^0.34.2
         version: 0.34.2(solid-js@1.9.7)(vite@7.0.0(@types/node@24.0.4)(yaml@2.8.0))
@@ -73,8 +73,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0(@types/node@24.0.4)(yaml@2.8.0)
       vite-plugin-pages:
-        specifier: ^0.33.0
-        version: 0.33.0(@solidjs/router@0.15.3(solid-js@1.9.7))(vite@7.0.0(@types/node@24.0.4)(yaml@2.8.0))
+        specifier: ^0.33.1
+        version: 0.33.1(@solidjs/router@0.15.3(solid-js@1.9.7))(vite@7.0.0(@types/node@24.0.4)(yaml@2.8.0))
       vite-plugin-solid:
         specifier: ^2.11.7
         version: 2.11.7(@testing-library/jest-dom@6.6.3)(solid-js@1.9.7)(vite@7.0.0(@types/node@24.0.4)(yaml@2.8.0))
@@ -122,8 +122,8 @@ importers:
         specifier: ^24.0.4
         version: 24.0.4
       aws-cdk:
-        specifier: ^2.1019.1
-        version: 2.1019.1
+        specifier: ^2.1019.2
+        version: 2.1019.2
       eslint:
         specifier: ~9.29.0
         version: 9.29.0
@@ -1003,8 +1003,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.1019.1:
-    resolution: {integrity: sha512-G2jxKuTsYTrYZX80CDApCrKcZ+AuFxxd+b0dkb0KEkfUsela7RqrDGLm5wOzSCIc3iH6GocR8JDVZuJ+0nNuKg==}
+  aws-cdk@2.1019.2:
+    resolution: {integrity: sha512-LkWZ3IKBkfCPTCu60t4Wb9JMSkb+0Uzk+HIxZeW5sFohq8bxDGV0OP1hcqEC2+KbVYRn7q+YhMeSJ/FOQcgpiw==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -1879,11 +1879,11 @@ packages:
   pkg-types@1.3.1:
     resolution: {integrity: sha512-/Jm5M4RvtBFVkKWRu2BLUTNP8/M2a+UwuAX+ae4770q1qVGtfjG+WTCupoZixokjmHiry8uI+dlY8KXYV5HVVQ==}
 
-  pkg-types@2.1.0:
-    resolution: {integrity: sha512-wmJwA+8ihJixSoHKxZJRBQG1oY8Yr9pGLzRmSsNms0iNWyHHAlZCa7mmKiFR10YPZuz/2k169JiS/inOjBCZ2A==}
+  pkg-types@2.1.1:
+    resolution: {integrity: sha512-eY0QFb6eSwc9+0d/5D2lFFUq+A3n3QNGSy/X2Nvp+6MfzGw2u6EbA7S80actgjY1lkvvI0pqB+a4hioMh443Ew==}
 
-  pnpm@10.12.3:
-    resolution: {integrity: sha512-Rn3yxYYFYWVYCtbftUzqrZTFow+AiT697FpExapzwgWuSlu51e1ruE6nwkns54ZkK7tJ0GowffIY0D2kHDF0Fw==}
+  pnpm@10.12.4:
+    resolution: {integrity: sha512-Xqiw3u2U7WhpHJutTJVUknBcXuuKh++GvGLHSiawN7CP+VcPEIsuTb0d0akYb+qSXlJ/FBxkjoWvRWMQdGgBhA==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -1899,8 +1899,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.6.0:
-    resolution: {integrity: sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==}
+  prettier@3.6.1:
+    resolution: {integrity: sha512-5xGWRa90Sp2+x1dQtNpIpeOQpTDBs9cZDmA/qs2vDNN2i18PdapqY7CmBeyLlMuGqXJRIOPaCaVZTLNQRWUH/A==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2249,13 +2249,13 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite-plugin-pages@0.33.0:
-    resolution: {integrity: sha512-D6AydqTbGM2yDEPgdea7MS2wL4Eensagra+gCdO7mu5YJPcrNas5blMShxqlFOmK0JDvxh3iTVob5hJhfbHMXQ==}
+  vite-plugin-pages@0.33.1:
+    resolution: {integrity: sha512-ITLgZQCphuuovKqJg4cD7Mqo3SlaUO95O+Vfu1Kz9lF8fkAwNRK3XM25rGqaWXVja5OYinsskNH8Q8Eqvjk71Q==}
     peerDependencies:
       '@solidjs/router': '*'
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
       react-router: '*'
-      vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+      vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
       vue-router: '*'
     peerDependenciesMeta:
       '@solidjs/router':
@@ -3297,7 +3297,7 @@ snapshots:
       '@aws-cdk/cloud-assembly-schema': 44.7.0
       constructs: 10.4.2
 
-  aws-cdk@2.1019.1:
+  aws-cdk@2.1019.2:
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -4118,7 +4118,7 @@ snapshots:
   local-pkg@1.1.1:
     dependencies:
       mlly: 1.7.4
-      pkg-types: 2.1.0
+      pkg-types: 2.1.1
       quansync: 0.2.10
 
   locate-path@6.0.0:
@@ -4275,13 +4275,13 @@ snapshots:
       mlly: 1.7.4
       pathe: 2.0.3
 
-  pkg-types@2.1.0:
+  pkg-types@2.1.1:
     dependencies:
       confbox: 0.2.2
       exsolve: 1.0.7
       pathe: 2.0.3
 
-  pnpm@10.12.3: {}
+  pnpm@10.12.4: {}
 
   possible-typed-array-names@1.1.0: {}
 
@@ -4293,7 +4293,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.6.0: {}
+  prettier@3.6.1: {}
 
   pretty-format@27.5.1:
     dependencies:
@@ -4723,7 +4723,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-pages@0.33.0(@solidjs/router@0.15.3(solid-js@1.9.7))(vite@7.0.0(@types/node@24.0.4)(yaml@2.8.0)):
+  vite-plugin-pages@0.33.1(@solidjs/router@0.15.3(solid-js@1.9.7))(vite@7.0.0(@types/node@24.0.4)(yaml@2.8.0)):
     dependencies:
       '@types/debug': 4.1.12
       debug: 4.4.1
