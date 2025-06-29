@@ -13,15 +13,15 @@
     "lint-fix": "eslint --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
+    "@eslint/js": "^9.30.0",
     "@solidjs/testing-library": "^0.8.10",
-    "@stylistic/eslint-plugin": "^5.0.0",
+    "@stylistic/eslint-plugin": "^5.1.0",
     "@stylistic/eslint-plugin-js": "^4.4.1",
     "@stylistic/eslint-plugin-jsx": "^4.4.1",
     "@stylistic/eslint-plugin-plus": "^4.4.1",
     "@stylistic/eslint-plugin-ts": "^4.4.1",
     "@testing-library/jest-dom": "^6.6.3",
-    "eslint": "~9.29.0",
+    "eslint": "~9.30.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-solid": "^0.14.5",
     "jsdom": "^26.1.0",
