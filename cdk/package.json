@@ -17,8 +17,8 @@
     "@stylistic/eslint-plugin-js": "^4.4.1",
     "@stylistic/eslint-plugin-plus": "^4.4.1",
     "@stylistic/eslint-plugin-ts": "^4.4.1",
-    "@types/aws-lambda": "^8.10.150",
-    "@types/node": "^24.0.14",
+    "@types/aws-lambda": "^8.10.152",
+    "@types/node": "^24.0.15",
     "aws-cdk": "^2.1021.0",
     "eslint": "~9.31.0",
     "eslint-plugin-import": "^2.32.0",
@@ -32,7 +32,7 @@
   "dependencies": {
     "aws-cdk-lib": "^2.206.0",
     "constructs": "^10.4.2",
-    "esbuild": "^0.25.6",
+    "esbuild": "^0.25.8",
     "hono": "^4.8.5",
     "source-map-support": "^0.5.21"
   }
