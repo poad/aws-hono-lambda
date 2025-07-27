@@ -12,7 +12,7 @@
     "lint-fix": "eslint --fix './{bin,lib,lambda,function}/**/*.ts'"
   },
   "devDependencies": {
-    "@eslint/js": "^9.31.0",
+    "@eslint/js": "^9.32.0",
     "@stylistic/eslint-plugin": "^5.2.2",
     "@stylistic/eslint-plugin-js": "^4.4.1",
     "@stylistic/eslint-plugin-plus": "^4.4.1",
@@ -33,7 +33,7 @@
     "aws-cdk-lib": "^2.207.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.25.8",
-    "hono": "^4.8.5",
+    "hono": "^4.8.9",
     "source-map-support": "^0.5.21"
   }
 }
