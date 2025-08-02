@@ -94,8 +94,8 @@ importers:
         specifier: ^0.25.8
         version: 0.25.8
       hono:
-        specifier: ^4.8.10
-        version: 4.8.10
+        specifier: ^4.8.12
+        version: 4.8.12
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -1480,8 +1480,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.8.10:
-    resolution: {integrity: sha512-DRMYbR3aFk6YET1FCSAFbgF2cWYTz5j0YAFYPECx9fmrbKBDAYnWU+YCgRTpOaatxMYN6e68U/2IG39zRP4W/A==}
+  hono@4.8.12:
+    resolution: {integrity: sha512-MQSKk1Mg7b74k8l+A025LfysnLtXDKkE4pLaSsYRQC5iy85lgZnuyeQ1Wynair9mmECzoLu+FtJtqNZSoogBDQ==}
     engines: {node: '>=16.9.0'}
 
   html-encoding-sniffer@4.0.0:
@@ -3871,7 +3871,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.8.10: {}
+  hono@4.8.12: {}
 
   html-encoding-sniffer@4.0.0:
     dependencies:
