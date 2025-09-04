@@ -94,8 +94,8 @@ importers:
         specifier: ^0.25.9
         version: 0.25.9
       hono:
-        specifier: ^4.9.5
-        version: 4.9.5
+        specifier: ^4.9.6
+        version: 4.9.6
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -122,8 +122,8 @@ importers:
         specifier: ^24.3.0
         version: 24.3.0
       aws-cdk:
-        specifier: ^2.1027.0
-        version: 2.1027.0
+        specifier: ^2.1028.0
+        version: 2.1028.0
       eslint:
         specifier: ~9.34.0
         version: 9.34.0
@@ -1046,8 +1046,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.1027.0:
-    resolution: {integrity: sha512-oo2d1o8L1GBmAG4cDzIloEBOkijf1VzpZKJJguAodUCffDDOaAd6zjEbQbedb3SY+Vg+8m9OUOEXzeLMMg3GPQ==}
+  aws-cdk@2.1028.0:
+    resolution: {integrity: sha512-PcWyjrLiTfhWiqI/R6JmiLO57riONGMhZ2SsdjHuDZ3wSlsz8WtDblohHqaUaylkF1aasYfM6LCnoZFv7eHkNw==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -1527,8 +1527,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.9.5:
-    resolution: {integrity: sha512-aLAVl5/67ifNnoFVxnhR89dpmSLsgwBprw/PT671ASwUpJqmd7Ne8KPTQo37DbRZfgpHaHeZ4bPVUvbOkeedMw==}
+  hono@4.9.6:
+    resolution: {integrity: sha512-doVjXhSFvYZ7y0dNokjwwSahcrAfdz+/BCLvAMa/vHLzjj8+CFyV5xteThGUsKdkaasgN+gF2mUxao+SGLpUeA==}
     engines: {node: '>=16.9.0'}
 
   html-encoding-sniffer@4.0.0:
@@ -3387,7 +3387,7 @@ snapshots:
       '@aws-cdk/cloud-assembly-schema': 48.6.0
       constructs: 10.4.2
 
-  aws-cdk@2.1027.0:
+  aws-cdk@2.1028.0:
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -3971,7 +3971,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.9.5: {}
+  hono@4.9.6: {}
 
   html-encoding-sniffer@4.0.0:
     dependencies:
