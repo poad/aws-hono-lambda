@@ -24,7 +24,7 @@
     "eslint": "~9.35.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-solid": "^0.14.5",
-    "jsdom": "^26.1.0",
+    "jsdom": "^27.0.0",
     "prettier": "^3.6.2",
     "solid-devtools": "^0.34.3",
     "typescript": "^5.9.2",

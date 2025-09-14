@@ -18,7 +18,7 @@
     "@stylistic/eslint-plugin-plus": "^4.4.1",
     "@stylistic/eslint-plugin-ts": "^4.4.1",
     "@types/aws-lambda": "^8.10.152",
-    "@types/node": "^24.3.3",
+    "@types/node": "^24.4.0",
     "aws-cdk": "^2.1029.1",
     "eslint": "~9.35.0",
     "eslint-plugin-import": "^2.32.0",
