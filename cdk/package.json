@@ -20,7 +20,7 @@
     "@types/aws-lambda": "^8.10.152",
     "@types/node": "^24.5.2",
     "aws-cdk": "^2.1029.2",
-    "eslint": "~9.35.0",
+    "eslint": "~9.36.0",
     "eslint-plugin-import": "^2.32.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
