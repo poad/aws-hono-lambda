@@ -28,7 +28,7 @@
     "prettier": "^3.6.2",
     "solid-devtools": "^0.34.4",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.0",
+    "typescript-eslint": "^8.46.1",
     "vite": "^7.1.9",
     "vite-plugin-pages": "^0.33.1",
     "vite-plugin-solid": "^2.11.9",
