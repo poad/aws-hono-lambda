@@ -31,8 +31,8 @@
     "typescript-eslint": "^8.46.2",
     "vite": "^7.1.11",
     "vite-plugin-pages": "^0.33.1",
-    "vite-plugin-solid": "^2.11.9",
-    "vitest": "^3.2.4"
+    "vite-plugin-solid": "^2.11.10",
+    "vitest": "^4.0.1"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.3",
