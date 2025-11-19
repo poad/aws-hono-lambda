@@ -28,8 +28,8 @@ importers:
         specifier: ^0.8.10
         version: 0.8.10(@solidjs/router@0.15.4(solid-js@1.9.10))(solid-js@1.9.10)
       '@stylistic/eslint-plugin':
-        specifier: ^5.6.0
-        version: 5.6.0(eslint@9.39.1)
+        specifier: ^5.6.1
+        version: 5.6.1(eslint@9.39.1)
       '@stylistic/eslint-plugin-js':
         specifier: ^4.4.1
         version: 4.4.1(eslint@9.39.1)
@@ -104,8 +104,8 @@ importers:
         specifier: ^9.39.1
         version: 9.39.1
       '@stylistic/eslint-plugin':
-        specifier: ^5.6.0
-        version: 5.6.0(eslint@9.39.1)
+        specifier: ^5.6.1
+        version: 5.6.1(eslint@9.39.1)
       '@stylistic/eslint-plugin-js':
         specifier: ^4.4.1
         version: 4.4.1(eslint@9.39.1)
@@ -122,8 +122,8 @@ importers:
         specifier: ^24.10.1
         version: 24.10.1
       aws-cdk:
-        specifier: ^2.1032.0
-        version: 2.1032.0
+        specifier: ^2.1033.0
+        version: 2.1033.0
       eslint:
         specifier: ~9.39.1
         version: 9.39.1
@@ -925,8 +925,8 @@ packages:
     peerDependencies:
       eslint: '>=9.0.0'
 
-  '@stylistic/eslint-plugin@5.6.0':
-    resolution: {integrity: sha512-owEc4B8ME+O/xyZOkLVyLqPMsUgJXIM4XzCm5Vt3WvRXpyoOfYxgA+JkEiFqXPCI8+Nc2BzAT+KGAK7QleGs8Q==}
+  '@stylistic/eslint-plugin@5.6.1':
+    resolution: {integrity: sha512-JCs+MqoXfXrRPGbGmho/zGS/jMcn3ieKl/A8YImqib76C8kjgZwq5uUFzc30lJkMvcchuRn6/v8IApLxli3Jyw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=9.0.0'
@@ -1218,8 +1218,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.1032.0:
-    resolution: {integrity: sha512-OFvTnwPrRsFklmPdTAX1li9s6yBWknVlojVy7geuBeJyMZo3aNIe6sbINYjKagRNFhacidbz2RocM7LcwQVY7w==}
+  aws-cdk@2.1033.0:
+    resolution: {integrity: sha512-Pit2k7cVAwxoYI7RMVsOyltuy7/HGENLupJ4KAm/d8mGzOfX+SLOo9YQsx5CKY9J6ErCZ1ViLerklTfjytvQww==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -3272,7 +3272,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@stylistic/eslint-plugin@5.6.0(eslint@9.39.1)':
+  '@stylistic/eslint-plugin@5.6.1(eslint@9.39.1)':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.0(eslint@9.39.1)
       '@typescript-eslint/types': 8.47.0
@@ -3644,7 +3644,7 @@ snapshots:
       '@aws-cdk/cloud-assembly-schema': 48.19.0
       constructs: 10.4.3
 
-  aws-cdk@2.1032.0:
+  aws-cdk@2.1033.0:
     optionalDependencies:
       fsevents: 2.3.2
 
