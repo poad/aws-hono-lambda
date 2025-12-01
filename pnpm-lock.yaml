@@ -62,7 +62,7 @@ importers:
         version: 3.7.3
       solid-devtools:
         specifier: ^0.34.4
-        version: 0.34.4(solid-js@1.9.10)(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2))
+        version: 0.34.4(solid-js@1.9.10)(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2))
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -70,14 +70,14 @@ importers:
         specifier: ^8.48.0
         version: 8.48.0(eslint@9.39.1)(typescript@5.9.3)
       vite:
-        specifier: ^7.2.4
-        version: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
+        specifier: ^7.2.6
+        version: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
       vite-plugin-pages:
         specifier: ^0.33.1
-        version: 0.33.1(@solidjs/router@0.15.4(solid-js@1.9.10))(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2))
+        version: 0.33.1(@solidjs/router@0.15.4(solid-js@1.9.10))(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2))
       vite-plugin-solid:
         specifier: ^2.11.10
-        version: 2.11.10(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2))
+        version: 2.11.10(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2))
       vitest:
         specifier: ^4.0.14
         version: 4.0.14(@types/node@24.10.1)(jsdom@27.2.0)(yaml@2.8.2)
@@ -85,8 +85,8 @@ importers:
   cdk:
     dependencies:
       aws-cdk-lib:
-        specifier: ^2.230.0
-        version: 2.230.0(constructs@10.4.3)
+        specifier: ^2.231.0
+        version: 2.231.0(constructs@10.4.3)
       constructs:
         specifier: ^10.4.3
         version: 10.4.3
@@ -140,11 +140,11 @@ importers:
         specifier: ^8.48.0
         version: 8.48.0(eslint@9.39.1)(typescript@5.9.3)
       vite:
-        specifier: ^7.2.4
-        version: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
+        specifier: ^7.2.6
+        version: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
       vite-tsconfig-paths:
         specifier: ^5.1.4
-        version: 5.1.4(typescript@5.9.3)(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2))
+        version: 5.1.4(typescript@5.9.3)(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2))
       vitest:
         specifier: ^4.0.14
         version: 4.0.14(@types/node@24.10.1)(jsdom@27.2.0)(yaml@2.8.2)
@@ -1151,8 +1151,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.230.0:
-    resolution: {integrity: sha512-hA1cWZAHpvrwJE55N77Km/aPUgN9NfbGm98vi91OeLKFgMVhdCXM57lJUAYTq0e8JHWFRWmsVlm9R8pq5jTJeA==}
+  aws-cdk-lib@2.231.0:
+    resolution: {integrity: sha512-RMt88F1vhsM28j81EjvIXRoPeYQdtk72EGh9xAP6LjuyF8df1hDBIy5cawUvagdp5eCBPVHrPJ2U0eaUUKtjFg==}
     engines: {node: '>= 18.0.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -2407,8 +2407,8 @@ packages:
       vite:
         optional: true
 
-  vite@7.2.4:
-    resolution: {integrity: sha512-NL8jTlbo0Tn4dUEXEsUg8KeyG/Lkmc4Fnzb8JXN/Ykm9G4HNImjtABMJgkQoVjOBN/j2WAwDTRytdqJbZsah7w==}
+  vite@7.2.6:
+    resolution: {integrity: sha512-tI2l/nFHC5rLh7+5+o7QjKjSR04ivXDF4jcgV0f/bTQ+OJiITy5S6gaynVsEM+7RqzufMnVbIon6Sr5x1SDYaQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3376,13 +3376,13 @@ snapshots:
       chai: 6.2.1
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.14(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2))':
+  '@vitest/mocker@4.0.14(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2))':
     dependencies:
       '@vitest/spy': 4.0.14
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
+      vite: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
 
   '@vitest/pretty-format@4.0.14':
     dependencies:
@@ -3501,7 +3501,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.230.0(constructs@10.4.3):
+  aws-cdk-lib@2.231.0(constructs@10.4.3):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.242
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
@@ -4681,7 +4681,7 @@ snapshots:
 
   siginfo@2.0.0: {}
 
-  solid-devtools@0.34.4(solid-js@1.9.10)(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2)):
+  solid-devtools@0.34.4(solid-js@1.9.10)(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2)):
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-syntax-typescript': 7.27.1(@babel/core@7.28.5)
@@ -4690,7 +4690,7 @@ snapshots:
       '@solid-devtools/shared': 0.20.0(solid-js@1.9.10)
       solid-js: 1.9.10
     optionalDependencies:
-      vite: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
+      vite: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -4905,7 +4905,7 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  vite-plugin-pages@0.33.1(@solidjs/router@0.15.4(solid-js@1.9.10))(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2)):
+  vite-plugin-pages@0.33.1(@solidjs/router@0.15.4(solid-js@1.9.10))(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2)):
     dependencies:
       '@types/debug': 4.1.12
       debug: 4.4.3
@@ -4916,14 +4916,14 @@ snapshots:
       micromatch: 4.0.8
       picocolors: 1.1.1
       tinyglobby: 0.2.15
-      vite: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
+      vite: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
       yaml: 2.8.2
     optionalDependencies:
       '@solidjs/router': 0.15.4(solid-js@1.9.10)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-solid@2.11.10(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2)):
+  vite-plugin-solid@2.11.10(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2)):
     dependencies:
       '@babel/core': 7.28.5
       '@types/babel__core': 7.20.5
@@ -4931,25 +4931,25 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.10
       solid-refresh: 0.6.3(solid-js@1.9.10)
-      vite: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
-      vitefu: 1.1.1(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2))
+      vite: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
+      vitefu: 1.1.1(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2))
     optionalDependencies:
       '@testing-library/jest-dom': 6.9.1
     transitivePeerDependencies:
       - supports-color
 
-  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2)):
+  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2)):
     dependencies:
       debug: 4.4.3
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.9.3)
     optionalDependencies:
-      vite: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
+      vite: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2):
+  vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -4962,14 +4962,14 @@ snapshots:
       fsevents: 2.3.3
       yaml: 2.8.2
 
-  vitefu@1.1.1(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2)):
+  vitefu@1.1.1(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2)):
     optionalDependencies:
-      vite: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
+      vite: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
 
   vitest@4.0.14(@types/node@24.10.1)(jsdom@27.2.0)(yaml@2.8.2):
     dependencies:
       '@vitest/expect': 4.0.14
-      '@vitest/mocker': 4.0.14(vite@7.2.4(@types/node@24.10.1)(yaml@2.8.2))
+      '@vitest/mocker': 4.0.14(vite@7.2.6(@types/node@24.10.1)(yaml@2.8.2))
       '@vitest/pretty-format': 4.0.14
       '@vitest/runner': 4.0.14
       '@vitest/snapshot': 4.0.14
@@ -4986,7 +4986,7 @@ snapshots:
       tinyexec: 0.3.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.2.4(@types/node@24.10.1)(yaml@2.8.2)
+      vite: 7.2.6(@types/node@24.10.1)(yaml@2.8.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.10.1
