@@ -32,7 +32,7 @@
     "vite": "^7.2.6",
     "vite-plugin-pages": "^0.33.1",
     "vite-plugin-solid": "^2.11.10",
-    "vitest": "^4.0.14"
+    "vitest": "^4.0.15"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.4",
