@@ -1,15 +1,16 @@
-// @ts-check
-
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx';
-// @ts-expect-error ignore type error
 import eslintImport from "eslint-plugin-import";
 import solid from 'eslint-plugin-solid';
-import tseslint from 'typescript-eslint';
+import tseslint, { parser } from 'typescript-eslint';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-export default tseslint.config(
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default defineConfig(
   {
     ignores: [
       '**/*.js',
@@ -23,42 +24,43 @@ export default tseslint.config(
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
   {
-    plugins: {
-      eslintImport,
-    },
-    rules: {
-      "eslintImport/default": "error",
-    },
-  },
-  {
-    rules: {
-      semi: ["error", "always"],
-    },
-  },
-  {
-    files: ['src/*.ts', 'src/**/*.ts'],
+    files: ["./src/*.{js,ts,jsx,tsx}"],
+    extends: [
+      eslintImport.flatConfigs.recommended,
+      eslintImport.flatConfigs.typescript,
+    ],
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/jsx': stylisticJsx,
+      solid,
+    },
+    languageOptions: {
+      parser,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      parserOptions: {
+        tsconfigRootDir: __dirname,
+        project: ['./tsconfig.json'],
+      },
+    },
+    'settings': {
+      'import/resolver': {
+        // You will also need to install and configure the TypeScript resolver
+        // See also https://github.com/import-js/eslint-import-resolver-typescript#configuration
+        'typescript': true,
+        'node': true,
+      },
+    },
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
     },
     rules: {
       '@stylistic/semi': 'error',
-      '@stylistic/ts/indent': ['error', 2],
-      '@stylistic/jsx/jsx-indent': ['error', 2],
-      'comma-dangle': ['error', 'always-multiline'],
-      'arrow-parens': ['error', 'always'],
-      'quotes': ['error', 'single']
-    },
-  },
-  {
-    plugins: {
-      solid,
-    },
-    files: ["./src/*.{js,ts,jsx,tsx}"],
-    linterOptions: {
-      noInlineConfig: true,
-      reportUnusedDisableDirectives: true,
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
+      "import/default": "error",
+      "mport/namespace": "off"
     },
   },
 );

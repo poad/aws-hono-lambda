@@ -5,8 +5,11 @@
     "types": ["vitest/globals"]
   },
   "include": [
-    "src",
+    "bin",
+    "function",
+    "lambda",
+    "lib",
     "vite.config.ts",
-    "test"
+    "test",
   ]
 }
