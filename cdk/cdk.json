@@ -1,5 +1,5 @@
 {
-  "app": "pnpm lint && pnpm dlx tsx bin/cdk.ts",
+  "app": "pnpm dlx tsx bin/cdk.ts",
   "watch": {
     "include": [
       "**"

@@ -19,6 +19,7 @@
     "@types/aws-lambda": "^8.10.161",
     "@types/node": "^24.12.2",
     "aws-cdk": "^2.1118.0",
+    "esbuild": "^0.28.0",
     "eslint": "^10.2.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
@@ -31,7 +32,6 @@
   "dependencies": {
     "aws-cdk-lib": "^2.250.0",
     "constructs": "^10.6.0",
-    "esbuild": "^0.28.0",
     "hono": "^4.12.14"
   }
 }
