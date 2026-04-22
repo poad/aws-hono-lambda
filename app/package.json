@@ -13,8 +13,8 @@
     "lint-fix": "eslint --fix"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.3",
-    "@eslint/core": "^1.1.1",
+    "@eslint/compat": "^2.0.5",
+    "@eslint/core": "^1.2.1",
     "@eslint/js": "^9.39.4",
     "@solidjs/testing-library": "^0.8.10",
     "@stylistic/eslint-plugin": "^5.10.0",
@@ -24,14 +24,14 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-solid": "^0.14.5",
     "jsdom": "^27.4.0",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.3",
     "solid-devtools": "^0.34.5",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.2",
+    "typescript-eslint": "^8.59.0",
     "vite": "^7.3.2",
     "vite-plugin-pages": "^0.33.3",
-    "vite-plugin-solid": "^2.11.11",
-    "vitest": "^4.1.2"
+    "vite-plugin-solid": "^2.11.12",
+    "vitest": "^4.1.5"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.4",
