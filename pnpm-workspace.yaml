@@ -1,6 +1,7 @@
 packages:
   - ./cdk
   - ./app
+
 allowBuilds:
   esbuild: false
   unrs-resolver: false
