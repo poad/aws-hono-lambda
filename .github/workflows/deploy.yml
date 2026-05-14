@@ -49,6 +49,7 @@ jobs:
         run_install: |
           - recursive: true
             args: [--no-frozen-lockfile]
+          - args: [--global, esbuild]
 
     - name: deploy
       working-directory: ./cdk

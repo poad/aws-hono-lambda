@@ -1,16 +1,12 @@
 {
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
-  },
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "nodenext",
     "lib": [
       "esnext",
       "dom"
     ],
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,

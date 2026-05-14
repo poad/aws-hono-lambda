@@ -3,7 +3,8 @@
 import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import eslintPluginImport from 'eslint-plugin-import';
+import { importX, createNodeResolver } from 'eslint-plugin-import-x';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import tseslint, { parser } from 'typescript-eslint';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -39,27 +40,44 @@ export default defineConfig(
         project: ['./tsconfig-test.json'],
       },
     },
-    'settings': {
-      'import/resolver': {
-        // You will also need to install and configure the TypeScript resolver
-        // See also https://github.com/import-js/eslint-import-resolver-typescript#configuration
-        'typescript': true,
-        'node': true,
-      },
-    },
     plugins: {
+      'import-x': importX,
       '@stylistic': stylistic,
     },
     extends: [
-      eslintPluginImport.flatConfigs.recommended,
-      eslintPluginImport.flatConfigs.typescript,
+      'import-x/flat/recommended',
     ],
+    settings: {
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+        }),
+        createNodeResolver(),
+      ],
+    },
     rules: {
       '@stylistic/semi': 'error',
       '@stylistic/indent': ['error', 2],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/arrow-parens': ['error', 'always'],
       '@stylistic/quotes': ['error', 'single'],
+
+      'import-x/order': [
+        'error',
+        {
+          'groups': [
+            // Imports of builtins are first
+            'builtin',
+            // Then sibling and parent imports. They can be mingled together
+            ['sibling', 'parent'],
+            // Then index file imports
+            'index',
+            // Then any arcane TypeScript imports
+            'object',
+            // Then the omitted imports: internal, external, type, unknown
+          ],
+        },
+      ],
     },
   },
 );

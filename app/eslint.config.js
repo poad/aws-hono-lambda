@@ -1,7 +1,8 @@
 import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import eslintImport from "eslint-plugin-import";
+import { importX, createNodeResolver } from 'eslint-plugin-import-x';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import solid from 'eslint-plugin-solid';
 import tseslint, { parser } from 'typescript-eslint';
 import path from 'node:path';
@@ -25,14 +26,6 @@ export default defineConfig(
   ...tseslint.configs.stylistic,
   {
     files: ["./src/*.{js,ts,jsx,tsx}"],
-    extends: [
-      eslintImport.flatConfigs.recommended,
-      eslintImport.flatConfigs.typescript,
-    ],
-    plugins: {
-      '@stylistic': stylistic,
-      solid,
-    },
     languageOptions: {
       parser,
       ecmaVersion: 'latest',
@@ -42,13 +35,21 @@ export default defineConfig(
         project: ['./tsconfig.json'],
       },
     },
-    'settings': {
-      'import/resolver': {
-        // You will also need to install and configure the TypeScript resolver
-        // See also https://github.com/import-js/eslint-import-resolver-typescript#configuration
-        'typescript': true,
-        'node': true,
-      },
+    plugins: {
+      'import-x': importX,
+      '@stylistic': stylistic,
+      solid,
+    },
+    extends: [
+      'import-x/flat/recommended',
+    ],
+    settings: {
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+        }),
+        createNodeResolver(),
+      ],
     },
     linterOptions: {
       reportUnusedDisableDirectives: true,
@@ -59,8 +60,23 @@ export default defineConfig(
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/arrow-parens': ['error', 'always'],
       '@stylistic/quotes': ['error', 'single'],
-      "import/default": "error",
-      "mport/namespace": "off"
+
+      'import-x/order': [
+        'error',
+        {
+          'groups': [
+            // Imports of builtins are first
+            'builtin',
+            // Then sibling and parent imports. They can be mingled together
+            ['sibling', 'parent'],
+            // Then index file imports
+            'index',
+            // Then any arcane TypeScript imports
+            'object',
+            // Then the omitted imports: internal, external, type, unknown
+          ],
+        },
+      ],
     },
   },
 );

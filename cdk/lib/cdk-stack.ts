@@ -1,3 +1,4 @@
+import { buildFrontend } from './process/setup.js';
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -7,7 +8,6 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as awslogs from 'aws-cdk-lib/aws-logs';
 import * as iam from 'aws-cdk-lib/aws-iam';
-import { buildFrontend } from './process/setup';
 import * as deployment from 'aws-cdk-lib/aws-s3-deployment';
 
 export interface Config extends cdk.StackProps {
