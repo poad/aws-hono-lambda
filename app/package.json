@@ -28,7 +28,7 @@
     "solid-devtools": "^0.34.5",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.10",
+    "vite": "^8.0.11",
     "vite-plugin-pages": "^0.33.3",
     "vite-plugin-solid": "^2.11.12",
     "vitest": "^4.1.5"
