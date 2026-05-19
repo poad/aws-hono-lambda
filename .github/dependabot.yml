@@ -7,12 +7,14 @@ updates:
       timezone: Asia/Tokyo
     allow:
       - dependency-type: all
+    cooldown:
+      default-days: 3
     rebase-strategy: auto
     assignees:
       - poad
 
   - package-ecosystem: npm
-    directories: 
+    directories:
       - '/'
       - '/cdk/'
       - '/app/'
@@ -21,6 +23,8 @@ updates:
       timezone: Asia/Tokyo
     allow:
       - dependency-type: all
+    cooldown:
+      default-days: 7
     rebase-strategy: auto
     assignees:
       - poad
