@@ -18,15 +18,15 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/aws-lambda": "^8.10.161",
     "@types/node": "^24.12.4",
-    "aws-cdk": "^2.1121.0",
+    "aws-cdk": "^2.1122.0",
     "esbuild": "^0.28.0",
     "eslint": "^10.3.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import-x": "^4.16.2",
-    "tsx": "^4.21.0",
+    "tsx": "^4.22.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.3",
-    "vite": "^8.0.12",
+    "vite": "^8.0.13",
     "vitest": "^4.1.6"
   },
   "dependencies": {
