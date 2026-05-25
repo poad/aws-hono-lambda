@@ -62,7 +62,7 @@ importers:
         version: 3.8.3
       solid-devtools:
         specifier: ^0.34.5
-        version: 0.34.5(solid-js@1.9.13)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0))
+        version: 0.34.5(solid-js@1.9.13)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0))
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -71,16 +71,16 @@ importers:
         version: 8.59.3(eslint@10.4.0)(typescript@6.0.3)
       vite:
         specifier: ^8.0.13
-        version: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)
+        version: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)
       vite-plugin-pages:
         specifier: ^0.33.3
-        version: 0.33.3(@solidjs/router@0.15.4(solid-js@1.9.13))(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0))
+        version: 0.33.3(@solidjs/router@0.15.4(solid-js@1.9.13))(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0))
       vite-plugin-solid:
         specifier: ^2.11.12
-        version: 2.11.12(@testing-library/jest-dom@6.9.1)(solid-js@1.9.13)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0))
+        version: 2.11.12(@testing-library/jest-dom@6.9.1)(solid-js@1.9.13)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0))
       vitest:
         specifier: ^4.1.6
-        version: 4.1.6(@types/node@24.12.4)(jsdom@27.4.0)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0))
+        version: 4.1.6(@types/node@24.12.4)(jsdom@27.4.0)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0))
 
   cdk:
     dependencies:
@@ -128,8 +128,8 @@ importers:
         specifier: ^4.16.2
         version: 4.16.2(@typescript-eslint/utils@8.59.3(eslint@10.4.0)(typescript@6.0.3))(eslint@10.4.0)
       tsx:
-        specifier: ^4.22.1
-        version: 4.22.1
+        specifier: ^4.22.2
+        version: 4.22.2
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -138,10 +138,10 @@ importers:
         version: 8.59.3(eslint@10.4.0)(typescript@6.0.3)
       vite:
         specifier: ^8.0.13
-        version: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)
+        version: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)
       vitest:
         specifier: ^4.1.6
-        version: 4.1.6(@types/node@24.12.4)(jsdom@27.4.0)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0))
+        version: 4.1.6(@types/node@24.12.4)(jsdom@27.4.0)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0))
 
 packages:
 
@@ -1572,8 +1572,8 @@ packages:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
 
-  lru-cache@11.3.6:
-    resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
+  lru-cache@11.4.0:
+    resolution: {integrity: sha512-W+R+kFL4HgVxONq2bhXPi3bGpzGe/yEhVOp233qw9wCRtgncJ15P3bC+e4zZMu4Cq7d+WAJjXGW0uUkifhcatA==}
     engines: {node: 20 || >=22}
 
   lru-cache@5.1.1:
@@ -1837,8 +1837,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsx@4.22.1:
-    resolution: {integrity: sha512-TvncJykhxAzFCk0VQZKBTClall4Pm7qXDSodb6uxi8QFa8X8mT6ABjxxsQ2opDRYxG7AzcRWXaFtruz5HJKuWg==}
+  tsx@4.22.2:
+    resolution: {integrity: sha512-6w9FwtT8WQqRAyTNR+Z+86kghRqpmOLjXUrBlBT6T+CQGDuIMm0VmAqaFUFBIeKDTGobE6/YSigZYLeomzBaRg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -2073,7 +2073,7 @@ snapshots:
       '@csstools/css-color-parser': 4.1.1(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-tokenizer': 4.0.0
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
 
   '@asamuzakjp/dom-selector@6.8.1':
     dependencies:
@@ -2081,7 +2081,7 @@ snapshots:
       bidi-js: 1.0.3
       css-tree: 3.2.1
       is-potential-custom-element-name: 1.0.1
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
 
   '@asamuzakjp/nwsapi@2.3.9': {}
 
@@ -2821,13 +2821,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.6(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0))':
+  '@vitest/mocker@4.1.6(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0))':
     dependencies:
       '@vitest/spy': 4.1.6
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)
+      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)
 
   '@vitest/pretty-format@4.1.6':
     dependencies:
@@ -2961,7 +2961,7 @@ snapshots:
       '@asamuzakjp/css-color': 4.1.2
       '@csstools/css-syntax-patches-for-csstree': 1.1.4(css-tree@3.2.1)
       css-tree: 3.2.1
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
 
   csstype@3.2.3: {}
 
@@ -3384,7 +3384,7 @@ snapshots:
     dependencies:
       p-locate: 5.0.0
 
-  lru-cache@11.3.6: {}
+  lru-cache@11.4.0: {}
 
   lru-cache@5.1.1:
     dependencies:
@@ -3555,7 +3555,7 @@ snapshots:
 
   siginfo@2.0.0: {}
 
-  solid-devtools@0.34.5(solid-js@1.9.13)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)):
+  solid-devtools@0.34.5(solid-js@1.9.13)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)):
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-syntax-typescript': 7.28.6(@babel/core@7.29.0)
@@ -3564,7 +3564,7 @@ snapshots:
       '@solid-devtools/shared': 0.20.0(solid-js@1.9.13)
       solid-js: 1.9.13
     optionalDependencies:
-      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)
+      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3637,7 +3637,7 @@ snapshots:
   tslib@2.8.1:
     optional: true
 
-  tsx@4.22.1:
+  tsx@4.22.2:
     dependencies:
       esbuild: 0.28.0
     optionalDependencies:
@@ -3698,7 +3698,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite-plugin-pages@0.33.3(@solidjs/router@0.15.4(solid-js@1.9.13))(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)):
+  vite-plugin-pages@0.33.3(@solidjs/router@0.15.4(solid-js@1.9.13))(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)):
     dependencies:
       '@types/debug': 4.1.13
       debug: 4.4.3
@@ -3709,14 +3709,14 @@ snapshots:
       micromatch: 4.0.8
       picocolors: 1.1.1
       tinyglobby: 0.2.16
-      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)
+      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)
       yaml: 2.9.0
     optionalDependencies:
       '@solidjs/router': 0.15.4(solid-js@1.9.13)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-solid@2.11.12(@testing-library/jest-dom@6.9.1)(solid-js@1.9.13)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)):
+  vite-plugin-solid@2.11.12(@testing-library/jest-dom@6.9.1)(solid-js@1.9.13)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)):
     dependencies:
       '@babel/core': 7.29.0
       '@types/babel__core': 7.20.5
@@ -3724,14 +3724,14 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.13
       solid-refresh: 0.6.3(solid-js@1.9.13)
-      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)
-      vitefu: 1.1.3(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0))
+      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)
+      vitefu: 1.1.3(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0))
     optionalDependencies:
       '@testing-library/jest-dom': 6.9.1
     transitivePeerDependencies:
       - supports-color
 
-  vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0):
+  vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -3742,17 +3742,17 @@ snapshots:
       '@types/node': 24.12.4
       esbuild: 0.28.0
       fsevents: 2.3.3
-      tsx: 4.22.1
+      tsx: 4.22.2
       yaml: 2.9.0
 
-  vitefu@1.1.3(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)):
+  vitefu@1.1.3(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)):
     optionalDependencies:
-      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)
+      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)
 
-  vitest@4.1.6(@types/node@24.12.4)(jsdom@27.4.0)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)):
+  vitest@4.1.6(@types/node@24.12.4)(jsdom@27.4.0)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)):
     dependencies:
       '@vitest/expect': 4.1.6
-      '@vitest/mocker': 4.1.6(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0))
+      '@vitest/mocker': 4.1.6(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0))
       '@vitest/pretty-format': 4.1.6
       '@vitest/runner': 4.1.6
       '@vitest/snapshot': 4.1.6
@@ -3769,7 +3769,7 @@ snapshots:
       tinyexec: 1.1.2
       tinyglobby: 0.2.16
       tinyrainbow: 3.1.0
-      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.1)(yaml@2.9.0)
+      vite: 8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(tsx@4.22.2)(yaml@2.9.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.12.4
