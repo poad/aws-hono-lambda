@@ -11,5 +11,17 @@
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
-  "packageManager": "pnpm@11.9.0"
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "~11.10.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "^24.18.0",
+      "onFail": "download"
+    }
+  },
+  "devDependencies": {}
 }
