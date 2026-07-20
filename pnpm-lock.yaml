@@ -205,7 +205,7 @@ settings:
 
 overrides:
   chokidar: '>=5'
-  eslint-import-resolver-typescript: ^4.4.4
+  eslint-import-resolver-typescript: ^4.4.5
   hono@<4.12.18: ^4.12.18
   semver: '>=7'
   ws@>=8.0.0 <8.20.1: ^8.20.1
