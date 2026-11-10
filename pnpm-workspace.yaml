@@ -6,19 +6,35 @@ allowBuilds:
   esbuild: false
   unrs-resolver: false
 
-minimumReleaseAge: 10080 # 7 days in minutes
+audit:
+  level: moderate
+  ignore:
+    - GHSA-g3hv-75wg-m249
 
+minimumReleaseAge: 10080 # 7 days in minutes
 minimumReleaseAgeExclude:
-  - hono@4.12.18
-  - ws@8.20.1
-  - pnpm@11.24.0
+  - pnpm@12.19.0
+  - '@rolldown/binding-android-arm-eabi@1.2.18'
+  - '@rolldown/binding-android-arm64@1.2.18'
+  - '@rolldown/binding-darwin-arm64@1.2.18'
+  - '@rolldown/binding-darwin-x64@1.2.18'
+  - '@rolldown/binding-freebsd-x64@1.2.18'
+  - '@rolldown/binding-linux-arm-gnueabihf@1.2.18'
+  - '@rolldown/binding-linux-arm64-gnu@1.2.18'
+  - '@rolldown/binding-linux-arm64-musl@1.2.18'
+  - '@rolldown/binding-linux-ppc64-gnu@1.2.18'
+  - '@rolldown/binding-linux-s390x-gnu@1.2.18'
+  - '@rolldown/binding-linux-x64-gnu@1.2.18'
+  - '@rolldown/binding-linux-x64-musl@1.2.18'
+  - '@rolldown/binding-openharmony-arm64@1.2.18'
+  - '@rolldown/binding-win32-arm64-msvc@1.2.18'
+  - '@rolldown/binding-win32-x64-msvc@1.2.18'
+  - rolldown@1.2.18
+  - vite@8.3.7
+  - hono@4.13.17
 
 overrides:
-  brace-expansion@>=4.0.0 <5.0.9: ^5.0.9
   chokidar: '>=5'
-  eslint-import-resolver-typescript: '^4.4.5'
-  hono@<4.12.18: ^4.12.18
   semver: '>=7'
-  ws@>=8.0.0 <8.20.1: ^8.20.1
 
 trustPolicy: no-downgrade
