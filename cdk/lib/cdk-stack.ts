@@ -1,14 +1,14 @@
-import { buildFrontend } from './process/setup.js';
 import * as cdk from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
+import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as awslogs from 'aws-cdk-lib/aws-logs';
-import * as iam from 'aws-cdk-lib/aws-iam';
+import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as deployment from 'aws-cdk-lib/aws-s3-deployment';
+import { Construct } from 'constructs';
+import { buildFrontend } from './process/setup.js';
 
 export interface Config extends cdk.StackProps {
   bucketName: string;
@@ -89,18 +89,26 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       encryption: s3.BucketEncryption.S3_MANAGED,
     });
 
-    const originAccessControl = new cloudfront.S3OriginAccessControl(this, 'S3OAC', {
-      originAccessControlName: `OAC for S3 (${appName})`,
-      signing: cloudfront.Signing.SIGV4_NO_OVERRIDE,
-    });
+    const originAccessControl = new cloudfront.S3OriginAccessControl(
+      this,
+      'S3OAC',
+      {
+        originAccessControlName: `OAC for S3 (${appName})`,
+        signing: cloudfront.Signing.SIGV4_NO_OVERRIDE,
+      },
+    );
 
-    const websiteIndexPageForwardFunction = new cloudfront.Function(this, 'WebsiteIndexPageForwardFunction', {
-      functionName: `${appName}-index-forword`,
-      code: cloudfront.FunctionCode.fromFile({
-        filePath: 'function/index.js',
-      }),
-      runtime: cloudfront.FunctionRuntime.JS_2_0,
-    });
+    const websiteIndexPageForwardFunction = new cloudfront.Function(
+      this,
+      'WebsiteIndexPageForwardFunction',
+      {
+        functionName: `${appName}-index-forword`,
+        code: cloudfront.FunctionCode.fromFile({
+          filePath: 'function/index.js',
+        }),
+        runtime: cloudfront.FunctionRuntime.JS_2_0,
+      },
+    );
     const functionAssociations = [
       {
         eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
@@ -122,13 +130,16 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       },
       additionalBehaviors: {
         [`${apiRootPath}*`]: {
-          origin: new origins.FunctionUrlOrigin(fn.addFunctionUrl({
-            authType: cdk.aws_lambda.FunctionUrlAuthType.AWS_IAM,
-          }),
-          {
-            originId: 'lambda',
-          }),
-          viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+          origin: new origins.FunctionUrlOrigin(
+            fn.addFunctionUrl({
+              authType: cdk.aws_lambda.FunctionUrlAuthType.AWS_IAM,
+            }),
+            {
+              originId: 'lambda',
+            },
+          ),
+          viewerProtocolPolicy:
+            cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
           cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
         },
       },
@@ -176,7 +187,8 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
         },
       );
 
-    const cfnDistribution = cf.node.defaultChild as cdk.aws_cloudfront.CfnDistribution;
+    const cfnDistribution = cf.node
+      .defaultChild as cdk.aws_cloudfront.CfnDistribution;
 
     // Set OAC
     cfnDistribution.addPropertyOverride(

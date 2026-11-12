@@ -5,8 +5,10 @@ const apiRoot = process.env.API_ROOT_PATH ?? '/';
 
 const app = new Hono();
 
-app.get(apiRoot, (c) => c.json({
-  message: 'Hello Hono!',
-}));
+app.get(apiRoot, (c) =>
+  c.json({
+    message: 'Hello Hono!',
+  }),
+);
 
 export const handler = handle(app);

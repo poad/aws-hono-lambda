@@ -1,5 +1,5 @@
-import { Show, createResource } from 'solid-js';
 import { A, useParams } from '@solidjs/router';
+import { Show, createResource } from 'solid-js';
 
 export default function Test() {
   const { id } = useParams();

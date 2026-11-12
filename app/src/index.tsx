@@ -1,5 +1,5 @@
-import { render } from 'solid-js/web';
 import { Router } from '@solidjs/router';
+import { render } from 'solid-js/web';
 // eslint-disable-next-line import-x/no-unresolved
 import routes from '~solid-pages';
 
@@ -14,4 +14,3 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 if (root) {
   render(() => <Router>{routes}</Router>, root);
 }
-

@@ -28,15 +28,13 @@ export const buildFrontend = () => {
     });
   });
 
-  [`${process.cwd()}/../app/dist`].forEach(
-    (dir) => {
-      if (fs.existsSync(dir)) {
-        fs.rmSync(dir, {
-          recursive: true,
-        });
-      }
-    },
-  );
+  [`${process.cwd()}/../app/dist`].forEach((dir) => {
+    if (fs.existsSync(dir)) {
+      fs.rmSync(dir, {
+        recursive: true,
+      });
+    }
+  });
 
   ['pnpm build'].forEach((cmd) => {
     childProcess.execSync(cmd, {

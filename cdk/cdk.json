@@ -1,9 +1,7 @@
 {
   "app": "pnpm dlx tsx bin/cdk.ts",
   "watch": {
-    "include": [
-      "**"
-    ],
+    "include": ["**"],
     "exclude": [
       "README.md",
       "cdk*.json",

@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": [
+    "**/*.d.ts",
+    "*.{js,jsx}",
+    "src/tsconfig.json",
+    "src/stories",
+    "**/*.css",
+    "node_modules/**/*",
+    "out",
+    "cdk.out",
+    "dist"
+  ]
+}

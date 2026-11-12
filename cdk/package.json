@@ -8,28 +8,24 @@
     "watch": "tsc -w",
     "test": "vitest --run --passWithNoTests",
     "cdk": "cdk",
-    "lint": "eslint './{bin,lib,lambda,function}/**/*.ts'",
-    "lint-fix": "eslint --fix './{bin,lib,lambda,function}/**/*.ts'"
+    "lint": "oxlint",
+    "lint-fix": "oxlint --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.10.0",
     "@types/aws-lambda": "^8.10.164",
     "@types/node": "^26.6.6",
     "aws-cdk": "^2.1147.0",
     "esbuild": "^0.28.2",
-    "eslint": "^10.14.0",
-    "eslint-import-resolver-typescript": "^4.4.5",
-    "eslint-plugin-import-x": "^4.17.1",
+    "oxfmt": "^0.76.0",
+    "oxlint": "^1.91.0",
     "tsx": "^4.23.15",
-    "typescript": "^6.0.3",
-    "typescript-eslint": "^8.72.1",
-    "vite": "^8.3.7",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6",
     "vitest": "^5.1.0"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.275.0",
     "constructs": "^10.8.1",
-    "hono": "^4.13.17"
+    "hono": "^4.13.16"
   }
 }

@@ -4,12 +4,5 @@
     "module": "esnext",
     "types": ["vitest/globals"]
   },
-  "include": [
-    "bin",
-    "function",
-    "lambda",
-    "lib",
-    "vite.config.ts",
-    "test",
-  ]
+  "include": ["bin", "function", "lambda", "lib", "vite.config.ts", "test"]
 }

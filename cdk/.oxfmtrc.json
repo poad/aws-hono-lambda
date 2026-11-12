@@ -1,0 +1,21 @@
+{
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "endOfLine": "lf",
+  "insertFinalNewline": true,
+  "arrowParens": "always",
+  "sortPackageJson": false,
+  "ignorePatterns": [],
+  "sortImports": {
+    "partitionByNewline": true,
+    "newlinesBetween": false,
+    "groups": [
+      ["builtin", "external"],
+      ["parent", "sibling", "index"]
+    ]
+  }
+}

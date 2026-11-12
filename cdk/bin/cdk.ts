@@ -1,8 +1,6 @@
 #!/usr/bin/env node
-import {
-  CloudfrontCdnTemplateStack,
-} from '../lib/cdk-stack.js';
 import * as cdk from 'aws-cdk-lib';
+import { CloudfrontCdnTemplateStack } from '../lib/cdk-stack.js';
 
 const app = new cdk.App();
 
