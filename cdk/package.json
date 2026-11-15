@@ -26,6 +26,6 @@
   "dependencies": {
     "aws-cdk-lib": "^2.275.0",
     "constructs": "^10.8.1",
-    "hono": "^4.13.16"
+    "hono": "^4.13.17"
   }
 }
