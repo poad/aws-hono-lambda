@@ -1,21 +1,21 @@
-import { A, useParams } from '@solidjs/router';
-import { Show, createResource } from 'solid-js';
+import { useParams } from '@solidjs/router';
+import { Loading, createMemo } from 'solid-js';
 
 export default function Test() {
   const { id } = useParams();
-  const [data] = createResource<{ message: string }>(() =>
+  const data = createMemo<{ message: string }>(() =>
     fetch('/api/').then((resp) => resp.json()),
   );
   return (
     <>
       <h1>{id}</h1>
       <p>
-        <Show when={!data.loading && data()}>
+        <Loading on={data} fallback={<p>Loading...</p>}>
           <span>{data()?.message}</span>
-        </Show>
+        </Loading>
       </p>
       <p>
-        <A href="/">HOME</A>
+        <a href="/">HOME</a>
       </p>
     </>
   );
