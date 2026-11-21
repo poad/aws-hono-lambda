@@ -13,21 +13,18 @@
     "lint-fix": "oxlint --fix"
   },
   "devDependencies": {
-    "@solidjs/testing-library": "1.0.0-rc.2",
-    "@testing-library/jest-dom": "^7.0.1",
-    "jsdom": "^31.0.0",
-    "oxfmt": "^0.77.0",
-    "oxlint": "^1.92.0",
+    "@solidjs/vite-plugin": "^3.0.1",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
     "solid-devtools": "^0.34.5",
     "typescript": "^7.0.2",
-    "vite": "^8.3.6",
+    "vite": "^8.3.8",
     "vite-plugin-pages": "^0.33.3",
-    "@solidjs/vite-plugin": "^3.0.1",
     "vitest": "^5.1.0"
   },
   "dependencies": {
     "@solidjs/router": "^2.0.0",
-    "solid-js": "^2.0.3",
-    "@solidjs/web": "^2.0.3"
+    "@solidjs/web": "^2.0.3",
+    "solid-js": "^2.0.3"
   }
 }
