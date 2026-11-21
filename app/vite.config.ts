@@ -3,7 +3,7 @@
 
 import { defineConfig } from 'vite';
 import pages from 'vite-plugin-pages';
-import solidPlugin from 'vite-plugin-solid';
+import solidPlugin from '@solidjs/vite-plugin';
 
 export default defineConfig({
   plugins: [
